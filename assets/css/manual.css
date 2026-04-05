@@ -107,7 +107,6 @@
 .manual-screenshot[alt$="IP 접근 제어 화면"],
 .manual-screenshot[alt$="시험 파일 화면"] {
   width: 100%;
-  height: min(72vh, 820px);
   object-fit: contain;
   object-position: top center;
 }
