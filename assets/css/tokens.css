@@ -1,0 +1,22 @@
+:root {
+  --bg: #f4f5f7;
+  --paper: #ffffff;
+  --paper-soft: #fbfbfc;
+  --line: #d7dce5;
+  --line-strong: #adb8ca;
+  --text: #111827;
+  --text-muted: #5f6878;
+  --accent: #163a63;
+  --accent-strong: #0f2744;
+  --accent-soft: #edf3fa;
+  --header-fill: #d8e4f0;
+  --shadow-lg: 0 24px 60px rgba(15, 23, 42, 0.08);
+  --shadow-sm: 0 10px 26px rgba(15, 23, 42, 0.06);
+  --radius-xl: 28px;
+  --radius-lg: 18px;
+  --radius-md: 12px;
+  --content-width: 1120px;
+  --sidebar-width: 320px;
+  --font-heading: "Noto Serif KR", "Nanum Myeongjo", serif;
+  --font-body: "SUIT Variable", "Pretendard", "Noto Sans KR", "Malgun Gothic", sans-serif;
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>IDN Manual Web</title>
+  <link rel="stylesheet" href="./assets/css/tokens.css" />
+  <link rel="stylesheet" href="./assets/css/base.css" />
+  <link rel="stylesheet" href="./assets/css/layout.css" />
+  <link rel="stylesheet" href="./assets/css/components.css" />
+</head>
+<body>
+  <div class="home-shell">
+    <header class="home-hero">
+      <p class="eyebrow">IDN 2.0 Manual Project</p>
+      <h1>IDN 사용자 매뉴얼 웹 프로젝트</h1>
+      <p class="hero-copy">
+        Word/PDF 중심 문서를 웹에서도 유지보수할 수 있도록 구성한 정적 매뉴얼 프로젝트다.
+        공통 스타일과 스크립트는 분리되어 있고, 문서 본문은 각 HTML 파일에서 직접 수정할 수 있다.
+      </p>
+    </header>
+
+    <main class="manual-card-grid">
+      <a class="manual-entry" href="./manuals/super-admin.html">
+        <span class="entry-badge">Ready</span>
+        <h2>최고 관리자 매뉴얼</h2>
+        <p>최종 웹 문서 페이지</p>
+      </a>
+      <a class="manual-entry" href="./manuals/group-admin.html">
+        <span class="entry-badge">Ready</span>
+        <h2>그룹 관리자 매뉴얼</h2>
+        <p>최종 웹 문서 페이지</p>
+      </a>
+      <a class="manual-entry" href="./manuals/user.html">
+        <span class="entry-badge">Ready</span>
+        <h2>일반 사용자 매뉴얼</h2>
+        <p>최종 웹 문서 페이지</p>
+      </a>
+    </main>
+
+    <section class="guide-panel">
+      <h2>수정 포인트</h2>
+      <div class="table-wrap">
+        <table class="doc-table">
+          <thead>
+            <tr>
+              <th>대상</th>
+              <th>파일</th>
+              <th>설명</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>문서 본문</td>
+              <td><code>manuals/super-admin.html</code></td>
+              <td>섹션, 표, 절차, 주의사항을 직접 수정</td>
+            </tr>
+            <tr>
+              <td>색상/폰트</td>
+              <td><code>assets/css/tokens.css</code></td>
+              <td>프로젝트 공통 디자인 토큰</td>
+            </tr>
+            <tr>
+              <td>레이아웃</td>
+              <td><code>assets/css/layout.css</code></td>
+              <td>사이드바, 문서 영역, 반응형 구조</td>
+            </tr>
+            <tr>
+              <td>표/배지</td>
+              <td><code>assets/css/components.css</code></td>
+              <td>카드, 표, 태그, 플레이스홀더 공통 스타일</td>
+            </tr>
+            <tr>
+              <td>목차 동작</td>
+              <td><code>assets/js/toc.js</code></td>
+              <td>현재 읽는 섹션 활성화</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </div>
+</body>
+</html>
