@@ -106,33 +106,75 @@
   font-weight: 800;
 }
 
+.screenshot-table {
+  table-layout: auto;
+}
+
+.screenshot-table thead {
+  display: none;
+}
+
+.screenshot-table tbody,
+.screenshot-table tr,
 .screenshot-table td {
-  height: 220px;
+  display: block;
+  width: 100%;
+}
+
+.screenshot-table tr + tr {
+  margin-top: 18px;
+}
+
+.screenshot-table td {
+  height: auto;
+  padding: 0;
+  border: 0;
   text-align: center;
   vertical-align: middle;
-  background:
-    linear-gradient(180deg, rgba(245,247,250,0.96), rgba(255,255,255,1)),
-    repeating-linear-gradient(45deg, rgba(205,214,226,0.24) 0 8px, rgba(255,255,255,0.2) 8px 16px);
+  background: transparent;
   color: #667386;
 }
 
-.screenshot-card-table td {
-  height: auto;
-  padding: 20px;
+.screenshot-table:not(.screenshot-card-table) tr {
+  padding: 18px 18px 16px;
+  border: 1px solid rgba(42, 52, 66, 0.86);
+  background:
+    linear-gradient(180deg, rgba(245,247,250,0.96), rgba(255,255,255,1)),
+    repeating-linear-gradient(45deg, rgba(205,214,226,0.18) 0 8px, rgba(255,255,255,0.18) 8px 16px);
+}
+
+.screenshot-table:not(.screenshot-card-table) td:first-child {
+  order: 2;
+  margin-top: 12px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #223247;
+}
+
+.screenshot-table:not(.screenshot-card-table) td:last-child {
+  order: 1;
+}
+
+.screenshot-card-table tr {
+  padding: 18px;
+  border: 1px solid rgba(42, 52, 66, 0.86);
+  background:
+    linear-gradient(180deg, rgba(245,247,250,0.96), rgba(255,255,255,1)),
+    repeating-linear-gradient(45deg, rgba(205,214,226,0.18) 0 8px, rgba(255,255,255,0.18) 8px 16px);
 }
 
 .screenshot-card {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 14px;
+  gap: 12px;
 }
 
 .screenshot-caption {
   margin: 0;
   font-size: 14px;
-  font-weight: 600;
-  color: #334155;
+  font-weight: 700;
+  color: #223247;
 }
 
 
