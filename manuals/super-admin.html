@@ -91,6 +91,7 @@
             <h2>1. 개요</h2>
               <p>본 문서는 ㈜클라우드플러그에서 개발한 IDN 서비스 사용자를 대상으로 시스템의 주요 기능과 화면 구성, 그리고 각 기능별 사용 방법을 이해하기 쉽도록 설명하기 위해 작성된 문서이다.</p>
               <p>최고 관리자는 전체 그룹 범위 또는 특정 그룹 범위를 선택하여 데이터를 조회할 수 있으며, 조직 관리, 라이선스 관리, 보안 정책, 시스템품질 메뉴에 접근할 수 있다.</p>
+              <p>실제 운영에서는 대시보드 점검 후 조직/사용자 구조 정비, 네트워크 자원 관리, 보안 정책 점검, 시스템 품질 검증 순으로 진행하는 것이 안전하다.</p>
             <article class="manual-article" id="1-1-작성-목적">
               <h3>1.1 작성 목적</h3>
               <p>본 문서의 목적은 IDN 서비스에서 제공하는 주요 기능을 사용자가 정확하게 이해하고, 실제 업무 환경에서 원활하게 활용할 수 있도록 지원하는 데 있다.</p>
@@ -178,6 +179,8 @@
               <p class="label-row"><span>▶</span><strong>처리 결과 / 유의사항:</strong></p>
               <p class="bullet-line">로그인 실패 시 오류 메시지 모달이 표시된다.</p>
               <p class="bullet-line">비밀번호 변경이 필요한 계정은 비밀번호 재설정 화면으로 이동한다.</p>
+              <p class="bullet-line">로그인 후 내부 동기화로 첫 화면 전환이 잠시 지연될 수 있다.</p>
+              <p class="bullet-line">접근 허용 장치 IP가 등록되지 않았거나 비밀번호가 만료된 경우 로그인이 제한될 수 있다.</p>
               <p class="bullet-line">로그인 실패 시 화면에 표시되는 메시지를 확인한 후, 필요한 경우 관리자에게 문의하여 계정 상태를 확인해야 한다.</p>
               <p class="label-row"><span>▶</span><strong>스크린샷:</strong></p>
               <div class="table-wrap">
@@ -388,6 +391,12 @@
                 </table>
               </div>
             </article>
+            <article class="manual-article compact">
+              <h3>3.3 공통 운용 규칙</h3>
+              <p class="bullet-line">`전체` 범위에서는 생성이 막히는 메뉴가 있으므로 생성 전 상단 그룹 선택을 먼저 확인한다.</p>
+              <p class="bullet-line">검색과 필터를 우선 사용하고, 중요한 변경 후에는 시스템 품질과 감사 로그를 함께 확인한다.</p>
+              <p class="bullet-line">업로드가 필요한 라이선스 파일과 시험 파일은 작업 전에 미리 준비한다.</p>
+            </article>
           </section>
           <section class="manual-section" id="4-사용자-메뉴">
             <h2>4. 사용자 메뉴</h2>
@@ -433,6 +442,8 @@
             <p class="label-row"><span>▶</span><strong>처리 결과 / 유의사항:</strong></p>
             <p class="bullet-line">그룹 컨텍스트 변경 시 대시보드 데이터가 다시 조회된다.</p>
             <p class="bullet-line">실시간 알람 SSE 구독이 동작한다.</p>
+            <p class="bullet-line">차단 사용자 수가 급증하면 계정 보안과 IP 접근 제어 정책을 함께 점검한다.</p>
+            <p class="bullet-line">최근 감사 이력을 함께 보면 선행 작업과 변경 주체를 빠르게 파악할 수 있다.</p>
             <p class="label-row"><span>▶</span><strong>스크린샷:</strong></p>
             <div class="table-wrap">
               <table class="doc-table screenshot-table screenshot-card-table">
@@ -514,6 +525,7 @@
             <p class="label-row"><span>▶</span><strong>처리 결과 / 유의사항:</strong></p>
             <p class="bullet-line">최고 관리자는 전체 그룹 범위에서는 등록이 제한되고 그룹을 선택해야 등록 가능하다.</p>
             <p class="bullet-line">그룹 범위 선택 시 `group_idx` 기준으로 목록이 조회된다.</p>
+            <p class="bullet-line">수정 시 외부/내부 IP, Port, 네트워크 인터페이스 값은 VNET과 엔드포인트 운영에 직접 영향을 준다.</p>
             <p class="label-row"><span>▶</span><strong>스크린샷:</strong></p>
             <div class="table-wrap">
               <table class="doc-table screenshot-table screenshot-card-table">
@@ -820,6 +832,14 @@
               <p class="label-row"><span>▶</span><strong>스크린샷:</strong></p>
               <p class="bullet-line">중계서버 삭제 확인 화면 캡처 파일은 현재 저장소에서 추가 확인이 필요하다.</p>
             </article>
+            <p class="label-row"><span>▶</span><strong>추가 화면:</strong></p>
+            <div class="table-wrap">
+              <table class="doc-table screenshot-table screenshot-card-table">
+                <tbody>
+                  <tr><td><div class="screenshot-card"><img class="manual-screenshot" src="../assets/images/manuals/super-admin/management/5-2-2-2-중계서버-생성.png" alt="중계서버 등록 팝업" loading="lazy" /><p class="screenshot-caption">[중계서버 등록 팝업]</p></div></td></tr>
+                </tbody>
+              </table>
+            </div>
           </section>
           <section class="manual-section" id="5-2-3-가상보안네트워크-관리">
             <h2>5.2.3 가상보안네트워크 관리</h2>
@@ -896,7 +916,7 @@
                     <tr>
                       <td>
                         <div class="screenshot-card">
-                          <img class="manual-screenshot" src="../assets/images/manuals/super-admin/management/5-2-3-1-vnet-목록.png" alt="VNET 목록 화면" loading="lazy" />
+                          <img class="manual-screenshot" src="../assets/images/manuals/super-admin/management/5-2-3-가상보안네트워크-관리.png" alt="VNET 목록 화면" loading="lazy" />
                           <p class="screenshot-caption">[VNET 목록 화면]</p>
                         </div>
                       </td>
@@ -957,6 +977,14 @@
               <p class="label-row"><span>▶</span><strong>스크린샷:</strong></p>
               <p class="bullet-line">VNET 삭제 확인 화면 캡처 파일은 현재 저장소에서 추가 확인이 필요하다.</p>
             </article>
+            <p class="label-row"><span>▶</span><strong>추가 화면:</strong></p>
+            <div class="table-wrap">
+              <table class="doc-table screenshot-table screenshot-card-table">
+                <tbody>
+                  <tr><td><div class="screenshot-card"><img class="manual-screenshot" src="../assets/images/manuals/super-admin/management/5-2-3-1-2-vnet-생성.png" alt="VNET 생성 팝업" loading="lazy" /><p class="screenshot-caption">[VNET 생성 팝업]</p></div></td></tr>
+                </tbody>
+              </table>
+            </div>
           </section>
           <section class="manual-section" id="5-2-3-2-엔드포인트-목록">
             <h2>5.2.3.2 엔드포인트 목록</h2>
@@ -1067,6 +1095,14 @@
               <p class="label-row"><span>▶</span><strong>스크린샷:</strong></p>
               <p class="bullet-line">엔드포인트 삭제 확인 화면 캡처 파일은 현재 저장소에서 추가 확인이 필요하다.</p>
             </article>
+            <p class="label-row"><span>▶</span><strong>추가 화면:</strong></p>
+            <div class="table-wrap">
+              <table class="doc-table screenshot-table screenshot-card-table">
+                <tbody>
+                  <tr><td><div class="screenshot-card"><img class="manual-screenshot" src="../assets/images/manuals/super-admin/management/5-2-3-2-2-엔드포인트-생성.png" alt="엔드포인트 생성 팝업" loading="lazy" /><p class="screenshot-caption">[엔드포인트 생성 팝업]</p></div></td></tr>
+                </tbody>
+              </table>
+            </div>
           </section>
           <section class="manual-section" id="5-2-3-3-토폴로지">
             <h2>5.2.3.3 토폴로지</h2>
@@ -1141,7 +1177,7 @@
                     <tr>
                       <td>
                         <div class="screenshot-card">
-                          <img class="manual-screenshot" src="../assets/images/manuals/super-admin/management/5-2-3-4-네트워크-맵.png" alt="네트워크 맵 화면" loading="lazy" />
+                          <img class="manual-screenshot" src="../assets/images/manuals/super-admin/management/5-2-3-3-토폴로지.png" alt="네트워크 맵 화면" loading="lazy" />
                           <p class="screenshot-caption">[네트워크 맵 화면]</p>
                         </div>
                       </td>
@@ -1186,7 +1222,7 @@
                     <tr>
                       <td>
                         <div class="screenshot-card">
-                          <img class="manual-screenshot" src="../assets/images/manuals/super-admin/management/5-2-3-5-네트워크-마법사.png" alt="네트워크 마법사 화면" loading="lazy" />
+                          <img class="manual-screenshot" src="../assets/images/manuals/super-admin/management/5-2-3-1-2-vnet-생성.png" alt="네트워크 마법사 화면" loading="lazy" />
                           <p class="screenshot-caption">[네트워크 마법사 화면]</p>
                         </div>
                       </td>
@@ -1234,6 +1270,7 @@
             </div>
             <p class="label-row"><span>▶</span><strong>처리 결과 / 유의사항:</strong></p>
             <p class="bullet-line">그룹 컨텍스트를 선택한 경우 해당 그룹 사용자 기준으로 조회된다.</p>
+            <p class="bullet-line">사용자 생성 시 부서와 직위 체계가 먼저 준비되어 있어야 요청 결재 흐름을 안정적으로 운영할 수 있다.</p>
             <p class="bullet-line">최종 결재권자, 결재권자 표시가 함께 노출된다.</p>
             <p class="label-row"><span>▶</span><strong>스크린샷:</strong></p>
             <div class="table-wrap">
@@ -1250,6 +1287,14 @@
                   </tbody>
                 </table>
               </div>
+            <p class="label-row"><span>▶</span><strong>추가 화면:</strong></p>
+            <div class="table-wrap">
+              <table class="doc-table screenshot-table screenshot-card-table">
+                <tbody>
+                  <tr><td><div class="screenshot-card"><img class="manual-screenshot" src="../assets/images/manuals/super-admin/management/5-2-4-사용자-생성.png" alt="사용자 생성 팝업" loading="lazy" /><p class="screenshot-caption">[사용자 생성 팝업]</p></div></td></tr>
+                </tbody>
+              </table>
+            </div>
           </section>
           <section class="manual-section" id="5-2-5-조직-관리">
             <h2>5.2.5 조직 관리</h2>
@@ -1313,6 +1358,8 @@
             </div>
             <p class="label-row"><span>▶</span><strong>처리 결과 / 유의사항:</strong></p>
             <p class="bullet-line">조직 삭제 방식은 예약 삭제와 즉시 삭제로 구분된다.</p>
+            <p class="bullet-line">조직 생성은 기본 정보, 리소스 설정, 관리자 계정, 사용자 선택의 4단계 흐름으로 진행된다.</p>
+            <p class="bullet-line">운영 중 조직은 즉시 삭제보다 삭제 예약을 우선 검토하는 것이 안전하다.</p>
             <p class="bullet-line">그룹 관리자 문서에는 포함되지 않는 최고 관리자 전용 메뉴다.</p>
             <p class="label-row"><span>▶</span><strong>스크린샷:</strong></p>
             <div class="table-wrap">
@@ -1329,6 +1376,14 @@
                   </tbody>
                 </table>
               </div>
+            <p class="label-row"><span>▶</span><strong>추가 화면:</strong></p>
+            <div class="table-wrap">
+              <table class="doc-table screenshot-table screenshot-card-table">
+                <tbody>
+                  <tr><td><div class="screenshot-card"><img class="manual-screenshot" src="../assets/images/manuals/super-admin/management/5-2-5-조직-보조-화면.png" alt="조직 관리 보조 화면" loading="lazy" /><p class="screenshot-caption">[조직 관리 보조 화면]</p></div></td></tr>
+                </tbody>
+              </table>
+            </div>
           </section>
           <section class="manual-section" id="5-2-6-부서-관리">
             <h2>5.2.6 부서 관리</h2>
@@ -1403,6 +1458,7 @@
             <p class="label-row"><span>▶</span><strong>처리 결과 / 유의사항:</strong></p>
             <p class="bullet-line">그룹 노드를 선택하면 일부 입력 필드는 비활성화된다.</p>
             <p class="bullet-line">그룹 컨텍스트가 적용될 수 있다.</p>
+            <p class="bullet-line">부서와 직위는 사용자 생성 시 즉시 사용되므로 구조 변경 후 `변경사항 저장`을 반드시 수행한다.</p>
             <p class="label-row"><span>▶</span><strong>스크린샷:</strong></p>
             <div class="table-wrap">
                 <table class="doc-table screenshot-table screenshot-card-table">
@@ -1418,6 +1474,14 @@
                   </tbody>
                 </table>
               </div>
+            <p class="label-row"><span>▶</span><strong>추가 화면:</strong></p>
+            <div class="table-wrap">
+              <table class="doc-table screenshot-table screenshot-card-table">
+                <tbody>
+                  <tr><td><div class="screenshot-card"><img class="manual-screenshot" src="../assets/images/manuals/super-admin/management/5-2-6-직위-생성.png" alt="직위 생성 팝업" loading="lazy" /><p class="screenshot-caption">[직위 생성 팝업]</p></div></td></tr>
+                </tbody>
+              </table>
+            </div>
           </section>
           <section class="manual-section" id="5-2-7-알람-관리">
             <h2>5.2.7 알람 관리</h2>
@@ -1454,6 +1518,7 @@
             <p class="label-row"><span>▶</span><strong>처리 결과 / 유의사항:</strong></p>
             <p class="bullet-line">상세 패널에서 알람 코멘트 조회와 등록이 가능하다.</p>
             <p class="bullet-line">그룹 컨텍스트를 적용해 그룹별 알람을 조회할 수 있다.</p>
+            <p class="bullet-line">미해결 알람을 우선 확인하고 장애 조치 내용은 코멘트로 남기는 것이 좋다.</p>
             <p class="label-row"><span>▶</span><strong>스크린샷:</strong></p>
             <div class="table-wrap">
                 <table class="doc-table screenshot-table screenshot-card-table">
@@ -1501,6 +1566,7 @@
             </div>
             <p class="label-row"><span>▶</span><strong>처리 결과 / 유의사항:</strong></p>
             <p class="bullet-line">그룹 컨텍스트 적용 시 해당 그룹 기준 규칙이 저장된다.</p>
+            <p class="bullet-line">민감도가 너무 높으면 오탐이 증가하고 너무 낮으면 실제 이상 징후를 놓칠 수 있다.</p>
             <p class="label-row"><span>▶</span><strong>스크린샷:</strong></p>
             <div class="table-wrap">
                 <table class="doc-table screenshot-table screenshot-card-table">
@@ -1550,6 +1616,7 @@
             <p class="label-row"><span>▶</span><strong>처리 결과 / 유의사항:</strong></p>
             <p class="bullet-line">`.lic` 확장자 파일만 업로드 가능하다.</p>
             <p class="bullet-line">최고 관리자 전용 메뉴다.</p>
+            <p class="bullet-line">사용량이 최대치에 가까우면 신규 생성 작업 전에 라이선스 여유를 먼저 확인한다.</p>
             <p class="label-row"><span>▶</span><strong>스크린샷:</strong></p>
             <div class="table-wrap">
                 <table class="doc-table screenshot-table screenshot-card-table">
@@ -1565,6 +1632,14 @@
                   </tbody>
                 </table>
               </div>
+            <p class="label-row"><span>▶</span><strong>추가 화면:</strong></p>
+            <div class="table-wrap">
+              <table class="doc-table screenshot-table screenshot-card-table">
+                <tbody>
+                  <tr><td><div class="screenshot-card"><img class="manual-screenshot" src="../assets/images/manuals/super-admin/management/5-2-9-라이선스-업데이트.png" alt="라이선스 업데이트 팝업" loading="lazy" /><p class="screenshot-caption">[라이선스 업데이트 팝업]</p></div></td></tr>
+                </tbody>
+              </table>
+            </div>
           </section>
           <section class="manual-section" id="5-2-10-요청-관리">
             <h2>5.2.10 요청 관리</h2>
@@ -1601,6 +1676,7 @@
             </div>
             <p class="label-row"><span>▶</span><strong>처리 결과 / 유의사항:</strong></p>
             <p class="bullet-line">그룹 컨텍스트 선택 시 해당 그룹 요청만 조회된다.</p>
+            <p class="bullet-line">반려 시에는 사용자가 다시 작업할 수 있도록 사유를 구체적으로 작성하는 것이 좋다.</p>
             <p class="label-row"><span>▶</span><strong>스크린샷:</strong></p>
             <div class="table-wrap">
                 <table class="doc-table screenshot-table screenshot-card-table">
@@ -1675,6 +1751,7 @@
             </div>
             <p class="label-row"><span>▶</span><strong>처리 결과 / 유의사항:</strong></p>
             <p class="bullet-line">저장 전 변경 여부에 따라 버튼 활성화 상태가 바뀐다.</p>
+            <p class="bullet-line">공용 환경에서는 자동 로그아웃 시간을 짧게 두는 것이 안전하다.</p>
             <p class="label-row"><span>▶</span><strong>스크린샷:</strong></p>
             <div class="table-wrap">
                 <table class="doc-table screenshot-table screenshot-card-table">
@@ -1750,6 +1827,7 @@
             </div>
             <p class="label-row"><span>▶</span><strong>처리 결과 / 유의사항:</strong></p>
             <p class="bullet-line">금지 단어 목록은 쉼표 문자열 형태로 저장된다.</p>
+            <p class="bullet-line">금지 단어에는 회사명, 서비스명, 연도처럼 예측 가능한 문자열을 포함해 관리하는 것이 좋다.</p>
             <p class="label-row"><span>▶</span><strong>스크린샷:</strong></p>
             <div class="table-wrap">
                 <table class="doc-table screenshot-table screenshot-card-table">
@@ -1804,6 +1882,7 @@
             </div>
             <p class="label-row"><span>▶</span><strong>처리 결과 / 유의사항:</strong></p>
             <p class="bullet-line">차단 목록은 IP, 차단 일시, 사유를 기준으로 표시된다.</p>
+            <p class="bullet-line">반복 로그인 실패나 외부 스캔이 발생한 경우 차단 사유를 구체적으로 남겨 감사 대응에 활용한다.</p>
             <p class="label-row"><span>▶</span><strong>스크린샷:</strong></p>
             <div class="table-wrap">
                 <table class="doc-table screenshot-table screenshot-card-table">
@@ -1819,6 +1898,14 @@
                   </tbody>
                 </table>
               </div>
+            <p class="label-row"><span>▶</span><strong>추가 화면:</strong></p>
+            <div class="table-wrap">
+              <table class="doc-table screenshot-table screenshot-card-table">
+                <tbody>
+                  <tr><td><div class="screenshot-card"><img class="manual-screenshot" src="../assets/images/manuals/super-admin/security-policy/5-3-3-ip-차단-등록.png" alt="IP 차단 등록 팝업" loading="lazy" /><p class="screenshot-caption">[IP 차단 등록 팝업]</p></div></td></tr>
+                </tbody>
+              </table>
+            </div>
           </section>
           <section class="manual-section" id="5-3-4-시험-파일">
             <h2>5.3.4 시험 파일</h2>
@@ -1855,6 +1942,7 @@
             </div>
             <p class="label-row"><span>▶</span><strong>처리 결과 / 유의사항:</strong></p>
             <p class="bullet-line">시스템품질의 시험 시작 시 컨트롤러 시험 파일 선택 단계와 연계된다.</p>
+            <p class="bullet-line">시험 시작 전에 필요한 시험 파일이 미리 등록되어 있는지 확인하는 것이 좋다.</p>
             <p class="label-row"><span>▶</span><strong>스크린샷:</strong></p>
             <div class="table-wrap">
                 <table class="doc-table screenshot-table screenshot-card-table">
@@ -1870,6 +1958,14 @@
                   </tbody>
                 </table>
               </div>
+            <p class="label-row"><span>▶</span><strong>추가 화면:</strong></p>
+            <div class="table-wrap">
+              <table class="doc-table screenshot-table screenshot-card-table">
+                <tbody>
+                  <tr><td><div class="screenshot-card"><img class="manual-screenshot" src="../assets/images/manuals/super-admin/security-policy/5-3-4-시험-파일-업로드.png" alt="시험 파일 업로드 팝업" loading="lazy" /><p class="screenshot-caption">[시험 파일 업로드 팝업]</p></div></td></tr>
+                </tbody>
+              </table>
+            </div>
           </section>
           <section class="manual-section" id="5-4-시스템품질">
             <h2>5.4 시스템품질</h2>
@@ -1908,6 +2004,7 @@
             <p class="bullet-line">컨트롤러 시험 선택 시 시험 파일 선택 단계가 추가된다.</p>
             <p class="bullet-line">SSE 이벤트 수신 시 시험 결과 목록이 갱신된다.</p>
             <p class="bullet-line">세부 예약 입력 항목은 추가 확인이 필요하다.</p>
+            <p class="bullet-line">변경 작업 직후에는 수동 시험으로 먼저 확인하고 정기 시험은 저부하 시간대로 예약하는 것이 좋다.</p>
             <p class="label-row"><span>▶</span><strong>스크린샷:</strong></p>
             <div class="table-wrap">
                 <table class="doc-table screenshot-table screenshot-card-table">
@@ -1923,6 +2020,15 @@
                   </tbody>
                 </table>
               </div>
+            <p class="label-row"><span>▶</span><strong>추가 화면:</strong></p>
+            <div class="table-wrap">
+              <table class="doc-table screenshot-table screenshot-card-table">
+                <tbody>
+                  <tr><td><div class="screenshot-card"><img class="manual-screenshot" src="../assets/images/manuals/super-admin/system-quality/5-4-시험-시작.png" alt="시험 시작 팝업" loading="lazy" /><p class="screenshot-caption">[시험 시작 팝업]</p></div></td></tr>
+                  <tr><td><div class="screenshot-card"><img class="manual-screenshot" src="../assets/images/manuals/super-admin/system-quality/5-4-예약-설정.png" alt="예약 설정 팝업" loading="lazy" /><p class="screenshot-caption">[예약 설정 팝업]</p></div></td></tr>
+                </tbody>
+              </table>
+            </div>
           </section>
           <section class="manual-section" id="5-5-관리자-설정">
             <h2>5.5 관리자 설정</h2>
@@ -1992,6 +2098,8 @@
             <p class="label-row"><span>▶</span><strong>처리 결과 / 유의사항:</strong></p>
             <p class="bullet-line">정보 저장 전 비밀번호 확인 모달이 호출된다.</p>
             <p class="bullet-line">비밀번호 변경 성공 시 재로그인이 필요하다.</p>
+            <p class="bullet-line">관리자 장치 등록 기능으로 접근 허용 단말을 관리할 수 있으며 실제 사용하는 단말 위주로 등록하는 것이 좋다.</p>
+            <p class="bullet-line">대량 변경 후 상태 반영이 늦으면 전체 동기화를 검토한다.</p>
             <p class="label-row"><span>▶</span><strong>스크린샷:</strong></p>
             <div class="table-wrap">
                 <table class="doc-table screenshot-table screenshot-card-table">
@@ -2007,6 +2115,15 @@
                   </tbody>
                 </table>
               </div>
+            <p class="label-row"><span>▶</span><strong>추가 화면:</strong></p>
+            <div class="table-wrap">
+              <table class="doc-table screenshot-table screenshot-card-table">
+                <tbody>
+                  <tr><td><div class="screenshot-card"><img class="manual-screenshot" src="../assets/images/manuals/super-admin/admin-settings/5-5-비밀번호-변경.png" alt="비밀번호 변경 팝업" loading="lazy" /><p class="screenshot-caption">[비밀번호 변경 팝업]</p></div></td></tr>
+                  <tr><td><div class="screenshot-card"><img class="manual-screenshot" src="../assets/images/manuals/super-admin/admin-settings/5-5-관리자-장치-등록.png" alt="관리자 장치 등록 팝업" loading="lazy" /><p class="screenshot-caption">[관리자 장치 등록 팝업]</p></div></td></tr>
+                </tbody>
+              </table>
+            </div>
           </section>
           <section class="manual-section" id="5-6-감사">
             <h2>5.6 감사</h2>
@@ -2037,6 +2154,7 @@
             </div>
             <p class="label-row"><span>▶</span><strong>처리 결과 / 유의사항:</strong></p>
             <p class="bullet-line">그룹 컨텍스트 적용 시 선택 그룹 기준으로 조회된다.</p>
+            <p class="bullet-line">승인, 반려, 삭제, 정책 변경 같은 중요한 작업은 감사 로그로 이중 확인하는 것이 좋다.</p>
             <p class="label-row"><span>▶</span><strong>스크린샷:</strong></p>
             <div class="table-wrap">
                 <table class="doc-table screenshot-table screenshot-card-table">
@@ -2052,6 +2170,14 @@
                   </tbody>
                 </table>
               </div>
+            <p class="label-row"><span>▶</span><strong>추가 화면:</strong></p>
+            <div class="table-wrap">
+              <table class="doc-table screenshot-table screenshot-card-table">
+                <tbody>
+                  <tr><td><div class="screenshot-card"><img class="manual-screenshot" src="../assets/images/manuals/super-admin/audit/5-6-감사-백업.png" alt="감사 백업 팝업" loading="lazy" /><p class="screenshot-caption">[감사 백업 팝업]</p></div></td></tr>
+                </tbody>
+              </table>
+            </div>
           </section>
         </div>
       </main>

@@ -91,6 +91,7 @@
             <h2>1. 개요</h2>
             <p>본 문서는 그룹 관리자 권한으로 접근 가능한 메뉴만 기준으로 정리한 매뉴얼 초안이다.</p>
             <p>그룹 관리자는 자신의 소속 그룹 범위 내에서 관리 기능을 수행하며, 최고 관리자 전용 메뉴인 조직 관리, 라이선스 관리, 보안 및 정책, 시스템품질은 포함하지 않는다.</p>
+            <p>실제 운영에서는 대시보드 확인 후 부서, 사용자, 네트워크 자원 순으로 점검하는 흐름이 가장 안정적이다.</p>
           </section>
           <section class="manual-section" id="2-로그인">
             <h2>2. 로그인</h2>
@@ -133,6 +134,8 @@
               <p class="label-row"><span>▶</span><strong>처리 결과 / 유의사항:</strong></p>
               <p class="bullet-line">로그인 실패 시 오류 메시지가 표시된다.</p>
               <p class="bullet-line">최초 로그인 시 비밀번호 재설정 화면으로 이동할 수 있다.</p>
+              <p class="bullet-line">그룹 관리자는 로그인 직후부터 자신의 그룹 범위로 자동 제한되어 다른 조직으로 전환할 수 없다.</p>
+              <p class="bullet-line">로그인 실패가 반복되면 계정 잠금과 비밀번호 만료 여부를 함께 확인한다.</p>
               <p class="label-row"><span>▶</span><strong>스크린샷:</strong></p>
               <div class="table-wrap">
                 <table class="doc-table screenshot-table">
@@ -239,6 +242,12 @@
                 </table>
               </div>
             </article>
+            <article class="manual-article compact">
+              <h3>3.4 운용 전 확인 사항</h3>
+              <p class="bullet-line">접속 URL과 계정 잠금 여부, 비밀번호 만료 여부를 먼저 확인한다.</p>
+              <p class="bullet-line">팝업 차단이 과도하면 생성/수정 모달 동작이 제한될 수 있다.</p>
+              <p class="bullet-line">최신 Chromium 계열 브라우저와 100% 화면 배율 사용을 권장한다.</p>
+            </article>
           </section>
           <section class="manual-section" id="4-사용자-메뉴">
             <h2>4. 사용자 메뉴</h2>
@@ -277,6 +286,7 @@
             <p class="step-line">3. 필요한 항목을 클릭해 관련 화면으로 이동한다.</p>
             <p class="label-row"><span>▶</span><strong>처리 결과 / 유의사항:</strong></p>
             <p class="bullet-line">그룹 관리자 화면은 그룹 범위로 조회된다.</p>
+            <p class="bullet-line">최근 감사 이력을 함께 확인하면 같은 그룹 내 선행 작업을 빠르게 파악할 수 있다.</p>
             <p class="label-row"><span>▶</span><strong>스크린샷:</strong></p>
             <div class="table-wrap">
               <table class="doc-table screenshot-table">
@@ -332,6 +342,7 @@
             </div>
             <p class="label-row"><span>▶</span><strong>처리 결과 / 유의사항:</strong></p>
             <p class="bullet-line">조회 범위는 그룹 기준으로 제한된다.</p>
+            <p class="bullet-line">컨트롤러 등록 후에는 연결 상태와 관련 감사 로그를 함께 확인하는 것이 좋다.</p>
             <p class="label-row"><span>▶</span><strong>스크린샷:</strong></p>
             <div class="table-wrap">
               <table class="doc-table screenshot-table">
@@ -345,6 +356,23 @@
                   <tr>
                     <td>컨트롤러 관리 화면</td>
                     <td><img class="manual-screenshot" src="../assets/images/manuals/group-admin/management/5-2-1-컨트롤러-관리.png" alt="컨트롤러 관리 화면" loading="lazy" /></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p class="label-row"><span>▶</span><strong>추가 화면:</strong></p>
+            <div class="table-wrap">
+              <table class="doc-table screenshot-table">
+                <thead>
+                  <tr>
+                    <th>화면명</th>
+                    <th>이미지</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>컨트롤러 등록 팝업</td>
+                    <td><img class="manual-screenshot" src="../assets/images/manuals/group-admin/management/5-2-1-컨트롤러-생성.png" alt="컨트롤러 등록 팝업" loading="lazy" /></td>
                   </tr>
                 </tbody>
               </table>
@@ -402,6 +430,23 @@
                 </tbody>
               </table>
             </div>
+            <p class="label-row"><span>▶</span><strong>추가 화면:</strong></p>
+            <div class="table-wrap">
+              <table class="doc-table screenshot-table">
+                <thead>
+                  <tr>
+                    <th>화면명</th>
+                    <th>이미지</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>중계서버 등록 팝업</td>
+                    <td><img class="manual-screenshot" src="../assets/images/manuals/group-admin/management/5-2-2-중계서버-생성.png" alt="중계서버 등록 팝업" loading="lazy" /></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </section>
           <section class="manual-section" id="5-2-3-가상보안네트워크-관리">
             <h2>5.2.3 가상보안네트워크 관리</h2>
@@ -415,6 +460,7 @@
             <p class="step-line">3. 목록을 조회한 뒤 생성, 수정, 삭제 또는 상태 변경을 수행한다.</p>
             <p class="label-row"><span>▶</span><strong>처리 결과 / 유의사항:</strong></p>
             <p class="bullet-line">세부 화면은 최고 관리자와 유사하나 소속 그룹 범위로 제한된다.</p>
+            <p class="bullet-line">생성 작업 시 최고 관리자처럼 별도 그룹 선택 경고가 나타나지 않는다.</p>
             <p class="label-row"><span>▶</span><strong>스크린샷:</strong></p>
             <div class="table-wrap">
               <table class="doc-table screenshot-table">
@@ -427,7 +473,7 @@
                 <tbody>
                   <tr>
                     <td>가상보안네트워크 관리 화면</td>
-                    <td><img class="manual-screenshot" src="../assets/images/manuals/group-admin/management/5-2-3-가상보안네트워크-관리.png" alt="가상보안네트워크 관리 화면" loading="lazy" /></td>
+                    <td><img class="manual-screenshot" src="../assets/images/manuals/group-admin/management/5-2-3-1-vnet-목록.png" alt="가상보안네트워크 관리 화면" loading="lazy" /></td>
                   </tr>
                 </tbody>
               </table>
@@ -481,6 +527,23 @@
                   <tr>
                     <td>VNET 목록 화면</td>
                     <td><img class="manual-screenshot" src="../assets/images/manuals/group-admin/management/5-2-3-1-vnet-목록.png" alt="VNET 목록 화면" loading="lazy" /></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p class="label-row"><span>▶</span><strong>추가 화면:</strong></p>
+            <div class="table-wrap">
+              <table class="doc-table screenshot-table">
+                <thead>
+                  <tr>
+                    <th>화면명</th>
+                    <th>이미지</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>VNET 생성 팝업</td>
+                    <td><img class="manual-screenshot" src="../assets/images/manuals/group-admin/management/5-2-3-1-vnet-생성.png" alt="VNET 생성 팝업" loading="lazy" /></td>
                   </tr>
                 </tbody>
               </table>
@@ -539,6 +602,23 @@
                 </tbody>
               </table>
             </div>
+            <p class="label-row"><span>▶</span><strong>추가 화면:</strong></p>
+            <div class="table-wrap">
+              <table class="doc-table screenshot-table">
+                <thead>
+                  <tr>
+                    <th>화면명</th>
+                    <th>이미지</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>엔드포인트 생성 팝업</td>
+                    <td><img class="manual-screenshot" src="../assets/images/manuals/group-admin/management/5-2-3-2-엔드포인트-생성.png" alt="엔드포인트 생성 팝업" loading="lazy" /></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </section>
           <section class="manual-section" id="5-2-3-3-토폴로지">
             <h2>5.2.3.3 토폴로지</h2>
@@ -588,7 +668,7 @@
                 <tbody>
                   <tr>
                     <td>네트워크 맵 화면</td>
-                    <td><img class="manual-screenshot" src="../assets/images/manuals/group-admin/management/5-2-3-4-네트워크-맵.png" alt="네트워크 맵 화면" loading="lazy" /></td>
+                    <td><img class="manual-screenshot" src="../assets/images/manuals/group-admin/management/5-2-3-3-토폴로지.png" alt="네트워크 맵 화면" loading="lazy" /></td>
                   </tr>
                 </tbody>
               </table>
@@ -615,7 +695,7 @@
                 <tbody>
                   <tr>
                     <td>네트워크 마법사 화면</td>
-                    <td><img class="manual-screenshot" src="../assets/images/manuals/group-admin/management/5-2-3-5-네트워크-마법사.png" alt="네트워크 마법사 화면" loading="lazy" /></td>
+                    <td><img class="manual-screenshot" src="../assets/images/manuals/group-admin/management/5-2-3-1-vnet-생성.png" alt="네트워크 마법사 화면" loading="lazy" /></td>
                   </tr>
                 </tbody>
               </table>
@@ -658,6 +738,7 @@
             </div>
             <p class="label-row"><span>▶</span><strong>처리 결과 / 유의사항:</strong></p>
             <p class="bullet-line">그룹 범위 사용자만 조회된다.</p>
+            <p class="bullet-line">결재권자 설정은 요청 처리 흐름에 바로 반영되므로 저장 전 역할을 다시 확인한다.</p>
             <p class="label-row"><span>▶</span><strong>스크린샷:</strong></p>
             <div class="table-wrap">
               <table class="doc-table screenshot-table">
@@ -671,6 +752,23 @@
                   <tr>
                     <td>사용자 관리 화면</td>
                     <td><img class="manual-screenshot" src="../assets/images/manuals/group-admin/management/5-2-4-사용자-관리.png" alt="사용자 관리 화면" loading="lazy" /></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p class="label-row"><span>▶</span><strong>추가 화면:</strong></p>
+            <div class="table-wrap">
+              <table class="doc-table screenshot-table">
+                <thead>
+                  <tr>
+                    <th>화면명</th>
+                    <th>이미지</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>사용자 생성 팝업</td>
+                    <td><img class="manual-screenshot" src="../assets/images/manuals/group-admin/management/5-2-4-사용자-생성.png" alt="사용자 생성 팝업" loading="lazy" /></td>
                   </tr>
                 </tbody>
               </table>
@@ -728,6 +826,23 @@
                   <tr>
                     <td>부서 관리 화면</td>
                     <td><img class="manual-screenshot" src="../assets/images/manuals/group-admin/management/5-2-5-부서-관리.png" alt="부서 관리 화면" loading="lazy" /></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p class="label-row"><span>▶</span><strong>추가 화면:</strong></p>
+            <div class="table-wrap">
+              <table class="doc-table screenshot-table">
+                <thead>
+                  <tr>
+                    <th>화면명</th>
+                    <th>이미지</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>직위 생성 팝업</td>
+                    <td><img class="manual-screenshot" src="../assets/images/manuals/group-admin/management/5-2-5-직위-생성.png" alt="직위 생성 팝업" loading="lazy" /></td>
                   </tr>
                 </tbody>
               </table>
@@ -904,6 +1019,8 @@
             </div>
             <p class="label-row"><span>▶</span><strong>처리 결과 / 유의사항:</strong></p>
             <p class="bullet-line">비밀번호 확인 모달 이후 저장된다.</p>
+            <p class="bullet-line">그룹 관리자에게는 전체 동기화 대신 그룹 데이터 동기화 버튼이 표시된다.</p>
+            <p class="bullet-line">대량 변경 후 상태 반영이 늦을 때 그룹 데이터 동기화를 검토한다.</p>
             <p class="label-row"><span>▶</span><strong>스크린샷:</strong></p>
             <div class="table-wrap">
               <table class="doc-table screenshot-table">
@@ -917,6 +1034,23 @@
                   <tr>
                     <td>관리자 설정 화면</td>
                     <td><img class="manual-screenshot" src="../assets/images/manuals/group-admin/admin-settings/5-3-관리자-설정.png" alt="관리자 설정 화면" loading="lazy" /></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p class="label-row"><span>▶</span><strong>추가 화면:</strong></p>
+            <div class="table-wrap">
+              <table class="doc-table screenshot-table">
+                <thead>
+                  <tr>
+                    <th>화면명</th>
+                    <th>이미지</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>비밀번호 변경 팝업</td>
+                    <td><img class="manual-screenshot" src="../assets/images/manuals/group-admin/admin-settings/5-3-비밀번호-변경.png" alt="비밀번호 변경 팝업" loading="lazy" /></td>
                   </tr>
                 </tbody>
               </table>
@@ -961,6 +1095,23 @@
                   <tr>
                     <td>감사 화면</td>
                     <td><img class="manual-screenshot" src="../assets/images/manuals/group-admin/audit/5-4-감사.png" alt="감사 화면" loading="lazy" /></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p class="label-row"><span>▶</span><strong>추가 화면:</strong></p>
+            <div class="table-wrap">
+              <table class="doc-table screenshot-table">
+                <thead>
+                  <tr>
+                    <th>화면명</th>
+                    <th>이미지</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>감사 백업 팝업</td>
+                    <td><img class="manual-screenshot" src="../assets/images/manuals/group-admin/audit/5-4-감사-백업.png" alt="감사 백업 팝업" loading="lazy" /></td>
                   </tr>
                 </tbody>
               </table>
