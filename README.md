@@ -40,3 +40,4 @@ IDN 사용자 매뉴얼을 정적 웹 페이지로 관리하기 위한 프로젝
 - 목차 링크 대상은 `id` 속성과 동일하게 관리
 - 표는 `doc-table`
 - 스크린샷 삽입 표는 `doc-table screenshot-table`
+
