@@ -132,7 +132,6 @@
 .manual-screenshot[alt$="보안 탭"],
 .manual-screenshot[alt$="계정 삭제 탭"] {
   width: 100%;
-  height: min(72vh, 820px);
   object-fit: contain;
   object-position: top center;
 }
