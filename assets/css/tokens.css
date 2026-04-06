@@ -17,7 +17,8 @@
   --radius-md: 12px;
   --content-width: 1120px;
   --sidebar-width: 320px;
-  --font-heading: "Noto Serif KR", "Nanum Myeongjo", serif;
-  --font-body: "SUIT Variable", "Pretendard", "Noto Sans KR", "Malgun Gothic", sans-serif;
+  --font-heading:
+    "SUIT Variable", "Pretendard", "Noto Sans KR", "Malgun Gothic", sans-serif;
+  --font-body:
+    "SUIT Variable", "Pretendard", "Noto Sans KR", "Malgun Gothic", sans-serif;
 }
-

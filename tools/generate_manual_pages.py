@@ -72,8 +72,15 @@ def close_open_section(state: dict[str, bool], out: list[str]) -> None:
         state["section_open"] = False
 
 
+def parse_heading_numbers(text: str) -> tuple[int, ...]:
+    m = re.match(r"^(\d+(?:\.\d+)*)\.?(?:\s+|$)", text)
+    if not m:
+        return ()
+    return tuple(int(part) for part in m.group(1).split("."))
+
+
 def extract_headings(lines: list[str]) -> list[tuple[int, str, str]]:
-    items = []
+    items: list[tuple[int, str, str, tuple[int, ...]]] = []
     for line in lines:
         stripped = line.strip()
         m = re.match(r"^(#{2,3})\s+(.*)$", stripped)
@@ -89,8 +96,29 @@ def extract_headings(lines: list[str]) -> list[tuple[int, str, str]]:
             continue
         if not re.match(r"^\d", text):
             continue
-        items.append((level, text, slugify(text)))
-    return items
+        items.append((level, text, slugify(text), parse_heading_numbers(text)))
+
+    known_prefixes: set[tuple[int, ...]] = {numbers for _, _, _, numbers in items if numbers}
+    depth_map: dict[tuple[int, ...], int] = {}
+    resolved: list[tuple[int, str, str]] = []
+
+    for fallback_level, text, anchor, numbers in items:
+        toc_depth = fallback_level
+        if numbers:
+            ancestor_depth = 1
+            for size in range(len(numbers) - 1, 0, -1):
+                prefix = numbers[:size]
+                if prefix in depth_map:
+                    ancestor_depth = depth_map[prefix]
+                    break
+                if prefix in known_prefixes:
+                    ancestor_depth = size + 1
+                    break
+            toc_depth = min(ancestor_depth + 1, 4)
+            depth_map[numbers] = toc_depth
+        resolved.append((toc_depth, text, anchor))
+
+    return resolved
 
 
 def render_manual(md_text: str, role_slug: str) -> tuple[str, str]:
@@ -195,7 +223,6 @@ def render_manual(md_text: str, role_slug: str) -> tuple[str, str]:
         f'<a class="toc-link depth-{level}" href="#{anchor}">{esc(text)}</a>'
         for level, text, anchor in toc_items
     )
-
     hero_title = f"IDN 2.0 {role} 사용자 매뉴얼"
     body_html = "\n".join(out)
 
@@ -223,6 +250,17 @@ def render_manual(md_text: str, role_slug: str) -> tuple[str, str]:
         </div>
       </div>
       <button class="sidebar-toggle" type="button" data-sidebar-toggle aria-expanded="false">목차 열기</button>
+      <div class="manual-search" data-manual-search>
+        <label class="manual-search-label" for="manual-search-input">목차 검색</label>
+        <input
+          id="manual-search-input"
+          class="manual-search-input"
+          type="search"
+          placeholder="메뉴 또는 기능명 검색"
+          data-search-input
+        />
+        <p class="manual-search-empty" data-search-empty hidden>검색 결과가 없습니다.</p>
+      </div>
       <nav class="manual-toc" data-toc>
         {toc_html}
       </nav>
