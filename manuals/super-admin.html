@@ -22,10 +22,20 @@
           </div>
         </div>
         <button class="sidebar-toggle" type="button" data-sidebar-toggle aria-expanded="false">목차 열기</button>
+        <div class="manual-search" data-manual-search>
+          <label class="manual-search-label" for="manual-search-input">목차 검색</label>
+          <input
+            id="manual-search-input"
+            class="manual-search-input"
+            type="search"
+            placeholder="메뉴 또는 기능명 검색"
+            data-search-input
+          />
+          <p class="manual-search-empty" data-search-empty hidden>검색 결과가 없습니다.</p>
+        </div>
         <nav class="manual-toc" data-toc>
           <a class="toc-link depth-2" href="#1-개요">1. 개요</a>
             <a class="toc-link depth-3" href="#1-1-작성-목적">1.1 작성 목적</a>
-            <a class="toc-link depth-3" href="#1-2-식별-정보">1.2 식별 정보</a>
           <a class="toc-link depth-2" href="#2-로그인">2. 로그인</a>
             <a class="toc-link depth-3" href="#2-1-로그인">2.1 로그인</a>
             <a class="toc-link depth-3" href="#2-2-2단계-인증">2.2 2단계 인증</a>
@@ -114,42 +124,6 @@
               <h3>1.1 작성 목적</h3>
               <p>본 문서의 목적은 IDN 서비스에서 제공하는 주요 기능을 사용자가 정확하게 이해하고, 실제 업무 환경에서 원활하게 활용할 수 있도록 지원하는 데 있다.</p>
             </article>
-            <article class="manual-article" id="1-2-식별-정보">
-              <h3>1.2 식별 정보</h3>
-              <div class="table-wrap">
-                <table class="doc-table">
-                  <thead>
-                    <tr>
-                      <th>항목</th>
-                      <th>내용</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>문서명</td>
-                      <td>IDN 2.0 사용자 매뉴얼</td>
-                    </tr>
-                    <tr>
-                      <td>작성자</td>
-                      <td>이원정/윤태경</td>
-                    </tr>
-                    <tr>
-                      <td>문서 버전</td>
-                      <td>1.0</td>
-                    </tr>
-                    <tr>
-                      <td>작성일자</td>
-                      <td>2026-04-05</td>
-                    </tr>
-                    <tr>
-                      <td>최종 수정일자</td>
-                      <td>2026-04-06</td>
-                    </tr>
-                  </tbody>
-                </table>
-          </div>
-            </article>
-            
           </section>
           <section class="manual-section" id="2-로그인">
             <h2>2. 로그인</h2>

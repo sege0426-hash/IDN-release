@@ -22,6 +22,17 @@
           </div>
         </div>
         <button class="sidebar-toggle" type="button" data-sidebar-toggle aria-expanded="false">목차 열기</button>
+        <div class="manual-search" data-manual-search>
+          <label class="manual-search-label" for="manual-search-input">목차 검색</label>
+          <input
+            id="manual-search-input"
+            class="manual-search-input"
+            type="search"
+            placeholder="메뉴 또는 기능명 검색"
+            data-search-input
+          />
+          <p class="manual-search-empty" data-search-empty hidden>검색 결과가 없습니다.</p>
+        </div>
         <nav class="manual-toc" data-toc>
           <a class="toc-link depth-2" href="#1-개요">1. 개요</a>
           <a class="toc-link depth-2" href="#2-로그인">2. 로그인</a>
@@ -29,11 +40,11 @@
           <a class="toc-link depth-2" href="#3-공통-영역">3. 공통 영역</a>
           <a class="toc-link depth-3" href="#3-1-상단-메뉴">3.1 상단 메뉴</a>
           <a class="toc-link depth-2" href="#5-기능별-상세-설명">5. 기능별 상세 설명</a>
-          <a class="toc-link depth-2" href="#5-1-홈">5.1 홈</a>
-          <a class="toc-link depth-2" href="#5-2-네트워크">5.2 네트워크</a>
-          <a class="toc-link depth-2" href="#5-3-멤버">5.3 멤버</a>
-          <a class="toc-link depth-2" href="#5-4-요청">5.4 요청</a>
-          <a class="toc-link depth-2" href="#5-5-설정">5.5 설정</a>
+          <a class="toc-link depth-3" href="#5-1-홈">5.1 홈</a>
+          <a class="toc-link depth-3" href="#5-2-네트워크">5.2 네트워크</a>
+          <a class="toc-link depth-3" href="#5-3-멤버">5.3 멤버</a>
+          <a class="toc-link depth-3" href="#5-4-요청">5.4 요청</a>
+          <a class="toc-link depth-3" href="#5-5-설정">5.5 설정</a>
           <a class="toc-link depth-2" href="#6-일일-사용-체크리스트">6. 일일 사용 체크리스트</a>
           <a class="toc-link depth-2" href="#7-자주-하는-실수와-대응">7. 자주 하는 실수와 대응</a>
           <a class="toc-link depth-2" href="#8-빠른-진입-경로">8. 빠른 진입 경로</a>
@@ -48,117 +59,14 @@
         <div class="manual-document">
           <div class="document-accent">
           </div>
-          <div class="table-wrap">
-            <table class="doc-table">
-              <thead>
-                <tr>
-                  <th>항목</th>
-                  <th>내용</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>문서 버전</td>
-                  <td>Draft 0.1</td>
-                </tr>
-                <tr>
-                  <td>작성일</td>
-                  <td>2026-04-05</td>
-                </tr>
-                <tr>
-                  <td>적용 권한</td>
-                  <td>일반 사용자</td>
-                </tr>
-                <tr>
-                  <td>작성 기준</td>
-                  <td>현재 운영 소스코드 기준</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
           <section class="manual-section" id="1-개요">
             <h2>1. 개요</h2>
-            <p>본 문서는 일반 사용자 권한으로 로그인했을 때 상단 메뉴에서 실제 접근 가능한 화면을 기준으로 정리한 매뉴얼 초안이다.</p>
-            <p>일반 사용자는 홈, 네트워크, 멤버, 요청, 설정 메뉴를 사용할 수 있다.</p>
-            <p>이 문서는 메뉴를 나열하는 방식보다 실제 사용 흐름을 먼저 이해하도록 구성했다. 처음 접속한 사용자는 로그인 이후 홈에서 오늘 확인할 항목을 보고, 네트워크에서 실제 사용 자원을 확인한 다음, 요청함과 설정으로 이어서 확인하면 된다.</p>
-            <article class="manual-article compact">
-              <h3>1.1 추천 읽기 순서</h3>
-              <p class="bullet-line">로그인: 접속 실패 원인과 로그인 후 진입 위치를 먼저 확인한다.</p>
-              <p class="bullet-line">홈: 오늘 바로 확인할 알림, 참여 네트워크 수, 내 장치 상태를 파악한다.</p>
-              <p class="bullet-line">네트워크: 실제로 사용하는 네트워크와 장치 상태, 초대와 요청 흐름을 이해한다.</p>
-              <p class="bullet-line">요청: 받은 요청과 보낸 요청의 상태를 구분해서 읽는 방법을 익힌다.</p>
-              <p class="bullet-line">설정: 내 연락처와 비밀번호, 계정 삭제 전 주의사항을 확인한다.</p>
-            </article>
-            <article class="manual-article compact">
-              <h3>1.2 일반 사용자 권한 범위</h3>
-              <p class="bullet-line">가능한 작업: 홈 상태 확인, 참여 네트워크 조회, 네트워크 생성, 장치 상태 확인, 멤버 조회, 요청 확인, 프로필 수정, 비밀번호 변경, 계정 삭제.</p>
-              <p class="bullet-line">제한되는 작업: 컨트롤러와 중계서버 직접 관리, 조직과 부서 관리, 사용자 관리, 보안 정책 관리, 감사와 관리자 설정.</p>
-            </article>
-            <article class="manual-article compact">
-              <h3>1.3 식별 정보</h3>
-              <div class="table-wrap">
-                <table class="doc-table">
-                  <thead>
-                    <tr>
-                      <th>항목</th>
-                      <th>내용</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>문서명</td>
-                      <td>IDN 2.0 사용자 매뉴얼</td>
-                    </tr>
-                    <tr>
-                      <td>문서 버전</td>
-                      <td>1.0</td>
-                    </tr>
-                    <tr>
-                      <td>작성일자</td>
-                      <td>2026.01.19</td>
-                    </tr>
-                    <tr>
-                      <td>최종 수정일자</td>
-                      <td>2026.01.19</td>
-                    </tr>
-                    <tr>
-                      <td>파일명</td>
-                      <td>IDN2.0_사용자 매뉴얼_일반사용자</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </article>
-            <article class="manual-article compact">
-              <h3>1.4 수정 및 열람권한</h3>
-              <div class="table-wrap">
-                <table class="doc-table">
-                  <thead>
-                    <tr>
-                      <th>항목</th>
-                      <th>내용</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>작성권한</td>
-                      <td>㈜클라우드플러그 임직원</td>
-                    </tr>
-                    <tr>
-                      <td>수정권한</td>
-                      <td>㈜클라우드플러그 임직원</td>
-                    </tr>
-                    <tr>
-                      <td>열람권한</td>
-                      <td>㈜클라우드플러그 임직원의 동의를 받은 자</td>
-                    </tr>
-                    <tr>
-                      <td>배포권한</td>
-                      <td>㈜클라우드플러그 임직원</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
+            <p>본 문서는 ㈜클라우드플러그에서 개발한 IDN 서비스 사용자를 대상으로 시스템의 주요 기능과 화면 구성, 그리고 각 기능별 사용 방법을 이해하기 쉽도록 설명하기 위해 작성된 문서이다.</p>
+            <p>일반 사용자는 홈, 네트워크, 멤버, 요청, 설정 메뉴를 사용하여 자신의 연결 상태와 요청 현황을 확인하고, 필요한 범위 내에서 네트워크와 장치를 관리할 수 있다.</p>
+            <p>실제 사용에서는 로그인 후 홈 화면에서 오늘 확인할 항목을 점검하고, 네트워크와 멤버 정보를 확인한 다음, 요청 처리와 설정 변경으로 이어서 작업하는 흐름이 가장 자연스럽다.</p>
+            <article class="manual-article" id="1-1-작성-목적">
+              <h3>1.1 작성 목적</h3>
+              <p>본 문서의 목적은 일반 사용자가 IDN 서비스에서 제공하는 주요 기능을 정확하게 이해하고, 실제 사용 환경에서 필요한 작업을 원활하게 수행할 수 있도록 지원하는 데 있다.</p>
             </article>
           </section>
           <section class="manual-section" id="2-로그인">

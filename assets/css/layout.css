@@ -55,6 +55,8 @@
 }
 
 .manual-sidebar {
+  display: flex;
+  flex-direction: column;
   position: sticky;
   top: 0;
   align-self: start;
@@ -86,7 +88,10 @@
 .manual-toc {
   display: grid;
   gap: 6px;
-  max-height: calc(100vh - 210px);
+  align-content: start;
+  grid-auto-rows: max-content;
+  flex: 1;
+  min-height: 0;
   overflow: auto;
   padding-right: 8px;
 }
