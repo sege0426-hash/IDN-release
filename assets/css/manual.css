@@ -42,7 +42,9 @@
 
 .label-row,
 .step-line,
-.bullet-line {
+.bullet-line,
+.bullet-subline,
+.code-line {
   margin: 0 0 8px;
   font-size: 15px;
 }
@@ -73,9 +75,35 @@
   font-weight: 700;
 }
 
+.bullet-subline {
+  position: relative;
+  padding-left: 34px;
+  color: #334155;
+}
+
+.bullet-subline::before {
+  content: "–";
+  position: absolute;
+  left: 18px;
+  color: #64748b;
+  font-weight: 700;
+}
+
 .step-line {
   color: #1f2937;
 }
+
+.code-line {
+  padding: 10px 14px;
+  border: 1px solid rgba(148, 163, 184, 0.4);
+  border-radius: 10px;
+  background: #f8fafc;
+  color: #0f172a;
+  font-family: ui-monospace, SFMono-Regular, "Cascadia Code", Consolas, "Liberation Mono", monospace;
+  line-height: 1.6;
+  white-space: break-spaces;
+  word-break: break-word;
+ }
 
 .manual-screenshot {
   display: block;
