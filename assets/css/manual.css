@@ -88,14 +88,36 @@
   object-fit: contain;
 }
 
+.manual-screenshot-placeholder {
+  display: grid;
+  place-items: center;
+  width: min(100%, 1120px);
+  min-height: 260px;
+  border: 1px dashed rgba(148, 163, 184, 0.85);
+  border-radius: calc(var(--radius-md) + 2px);
+  background: repeating-linear-gradient(
+    -45deg,
+    #f8fafc,
+    #f8fafc 14px,
+    #eef2f7 14px,
+    #eef2f7 28px
+  );
+  color: #475569;
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
+}
+
 .manual-screenshot[alt$="대시보드 화면"],
 .manual-screenshot[alt$="홈 화면"],
+.manual-screenshot[alt$="메인 화면"],
 .manual-screenshot[alt$="네트워크 화면"],
 .manual-screenshot[alt$="네트워크 상세 화면"],
 .manual-screenshot[alt$="멤버 화면"],
 .manual-screenshot[alt$="요청 화면"],
 .manual-screenshot[alt$="보낸 요청 화면"],
 .manual-screenshot[alt$="설정 화면"],
+.manual-screenshot[alt$="보조 화면"],
 .manual-screenshot[alt$="관리 화면"],
 .manual-screenshot[alt$="목록 화면"],
 .manual-screenshot[alt$="토폴로지 화면"],
@@ -105,7 +127,10 @@
 .manual-screenshot[alt$="계정 보안 화면"],
 .manual-screenshot[alt$="비밀번호 보안 화면"],
 .manual-screenshot[alt$="IP 접근 제어 화면"],
-.manual-screenshot[alt$="시험 파일 화면"] {
+.manual-screenshot[alt$="시험 파일 화면"],
+.manual-screenshot[alt$="상태 패널"],
+.manual-screenshot[alt$="보안 탭"],
+.manual-screenshot[alt$="계정 삭제 탭"] {
   width: 100%;
   object-fit: contain;
   object-position: top center;
