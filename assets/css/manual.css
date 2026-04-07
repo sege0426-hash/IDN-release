@@ -39,6 +39,28 @@
   font-weight: 800;
 }
 
+.manual-article .manual-article h3 {
+  font-size: 18px;
+  font-weight: 750;
+}
+
+#5-1-idnclient-설치-및-사용 > h3,
+#5-2-idnclient-로그인 > h3,
+#5-3-idnclient-메인-화면-구성 > h3,
+#5-4-idnclient-연결 > h3,
+#5-5-idnclient-연결-해제 > h3,
+#5-6-idnclient-이름-변경 > h3,
+#5-7-idnclient-사용자-페이지-로그아웃-업데이트 > h3,
+#5-8-idnclient-사용-예시 > h3 {
+  font-size: 21px;
+  font-weight: 800;
+}
+
+.manual-article .manual-article .manual-article h3 {
+  font-size: 16px;
+  font-weight: 700;
+}
+
 
 .label-row,
 .step-line,
@@ -104,6 +126,20 @@
   white-space: break-spaces;
   word-break: break-word;
  }
+
+.manual-document code {
+  display: inline-block;
+  padding: 1px 6px;
+  border: 1px solid rgba(148, 163, 184, 0.28);
+  border-radius: 8px;
+  background: #eef3f8;
+  color: #334155;
+  font-family: ui-monospace, SFMono-Regular, "Cascadia Code", Consolas, "Liberation Mono", monospace;
+  font-size: 0.92em;
+  font-weight: 500;
+  line-height: 1.45;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.36);
+}
 
 .manual-screenshot {
   display: block;

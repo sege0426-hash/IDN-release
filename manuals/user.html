@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ko">
   <head>
     <meta charset="utf-8" />
@@ -21,9 +21,18 @@
             <span class="meta-pill">웹 문서</span>
           </div>
         </div>
-        <button class="sidebar-toggle" type="button" data-sidebar-toggle aria-expanded="false">목차 열기</button>
+        <button
+          class="sidebar-toggle"
+          type="button"
+          data-sidebar-toggle
+          aria-expanded="false"
+        >
+          목차 열기
+        </button>
         <div class="manual-search" data-manual-search>
-          <label class="manual-search-label" for="manual-search-input">목차 검색</label>
+          <label class="manual-search-label" for="manual-search-input"
+            >목차 검색</label
+          >
           <input
             id="manual-search-input"
             class="manual-search-input"
@@ -31,50 +40,122 @@
             placeholder="메뉴 또는 기능명 검색"
             data-search-input
           />
-          <p class="manual-search-empty" data-search-empty hidden>검색 결과가 없습니다.</p>
+          <p class="manual-search-empty" data-search-empty hidden>
+            검색 결과가 없습니다.
+          </p>
         </div>
         <nav class="manual-toc" data-toc>
           <a class="toc-link depth-2" href="#1-개요">1. 개요</a>
+          <a class="toc-link depth-3" href="#1-1-작성-목적">1.1 작성 목적</a>
           <a class="toc-link depth-2" href="#2-로그인">2. 로그인</a>
           <a class="toc-link depth-3" href="#2-1-로그인">2.1 로그인</a>
+          <a class="toc-link depth-3" href="#2-2-로그인-실패-안내"
+            >2.2 로그인 실패 시 안내</a
+          >
           <a class="toc-link depth-2" href="#3-공통-영역">3. 공통 영역</a>
           <a class="toc-link depth-3" href="#3-1-상단-메뉴">3.1 상단 메뉴</a>
-          <a class="toc-link depth-2" href="#5-기능별-상세-설명">5. 기능별 상세 설명</a>
-          <a class="toc-link depth-3" href="#5-1-홈">5.1 홈</a>
-          <a class="toc-link depth-3" href="#5-2-네트워크">5.2 네트워크</a>
-          <a class="toc-link depth-3" href="#5-3-멤버">5.3 멤버</a>
-          <a class="toc-link depth-3" href="#5-4-요청">5.4 요청</a>
-          <a class="toc-link depth-3" href="#5-5-설정">5.5 설정</a>
-          <a class="toc-link depth-2" href="#6-일일-사용-체크리스트">6. 일일 사용 체크리스트</a>
-          <a class="toc-link depth-2" href="#7-자주-하는-실수와-대응">7. 자주 하는 실수와 대응</a>
-          <a class="toc-link depth-2" href="#8-빠른-진입-경로">8. 빠른 진입 경로</a>
+          <a class="toc-link depth-3" href="#3-2-공통-기능"
+            >3.2 로그인 실패 시 점검</a
+          >
+          <a class="toc-link depth-2" href="#4-기능별-상세-설명"
+            >4. 기능별 상세 설명</a
+          >
+          <a class="toc-link depth-3" href="#4-1-홈">4.1 홈</a>
+          <a class="toc-link depth-3" href="#4-2-네트워크">4.2 네트워크</a>
+          <a class="toc-link depth-3" href="#4-3-멤버">4.3 멤버</a>
+          <a class="toc-link depth-3" href="#4-4-요청">4.4 요청</a>
+          <a class="toc-link depth-3" href="#4-5-설정">4.5 설정</a>
+          <a class="toc-link depth-2" href="#5-클라이언트-설치-및-사용"
+            >5. 클라이언트 설치 및 사용</a
+          >
+          <a class="toc-link depth-3" href="#5-1-idnclient-설치-및-사용"
+            >5.1 OS별 설치 방법</a
+          >
+          <a class="toc-link depth-3" href="#5-2-idnclient-로그인"
+            >5.2 IDNClient 로그인</a
+          >
+          <a class="toc-link depth-3" href="#5-3-idnclient-메인-화면-구성"
+            >5.3 IDNClient 메인 화면 구성</a
+          >
+          <a class="toc-link depth-3" href="#5-4-idnclient-연결"
+            >5.4 IDNClient 연결</a
+          >
+          <a class="toc-link depth-3" href="#5-5-idnclient-연결-해제"
+            >5.5 IDNClient 연결 해제</a
+          >
+          <a class="toc-link depth-3" href="#5-6-idnclient-이름-변경"
+            >5.6 IDNClient 이름 변경</a
+          >
+          <a
+            class="toc-link depth-3"
+            href="#5-7-idnclient-사용자-페이지-로그아웃-업데이트"
+            >5.7 사용자 페이지, 로그아웃, 업데이트</a
+          >
+          <a class="toc-link depth-3" href="#5-8-idnclient-사용-예시"
+            >5.8 IDNClient 사용 예시</a
+          >
+          <a class="toc-link depth-2" href="#6-일일-사용-체크리스트"
+            >6. 일일 사용 체크리스트</a
+          >
+          <a class="toc-link depth-2" href="#7-자주-하는-실수와-대응"
+            >7. 자주 하는 실수와 대응</a
+          >
+          <a class="toc-link depth-2" href="#8-빠른-진입-경로"
+            >8. 빠른 진입 경로</a
+          >
         </nav>
       </aside>
       <main class="manual-main">
         <header class="manual-hero">
           <p class="eyebrow">Operational Documentation</p>
           <h2>IDN 2.0 일반 사용자 사용자 매뉴얼</h2>
-          <p class="hero-copy">일반 사용자가 홈, 네트워크, 요청, 설정 화면을 처음 접해도 바로 따라갈 수 있도록 실제 사용 순서에 맞춰 정리한 운영 가이드다. 화면 이름 설명에 그치지 않고 먼저 볼 항목, 눌러야 할 버튼, 작업 후 확인할 결과까지 함께 안내한다.</p>
+          <p class="hero-copy">
+            일반 사용자가 홈, 네트워크, 요청, 설정 화면을 처음 접해도 바로
+            따라갈 수 있도록 실제 사용 순서에 맞춰 정리한 운영 가이드다. 화면
+            이름 설명에 그치지 않고 먼저 볼 항목, 눌러야 할 버튼, 작업 후 확인할
+            결과까지 함께 안내한다.
+          </p>
         </header>
         <div class="manual-document">
-          <div class="document-accent">
-          </div>
+          <div class="document-accent"></div>
           <section class="manual-section" id="1-개요">
             <h2>1. 개요</h2>
-            <p>본 문서는 ㈜클라우드플러그에서 개발한 IDN 서비스 사용자를 대상으로 시스템의 주요 기능과 화면 구성, 그리고 각 기능별 사용 방법을 이해하기 쉽도록 설명하기 위해 작성된 문서이다.</p>
-            <p>일반 사용자는 홈, 네트워크, 멤버, 요청, 설정 메뉴를 사용하여 자신의 연결 상태와 요청 현황을 확인하고, 필요한 범위 내에서 네트워크와 장치를 관리할 수 있다.</p>
-            <p>실제 사용에서는 로그인 후 홈 화면에서 오늘 확인할 항목을 점검하고, 네트워크와 멤버 정보를 확인한 다음, 요청 처리와 설정 변경으로 이어서 작업하는 흐름이 가장 자연스럽다.</p>
+            <p>
+              본 문서는 ㈜클라우드플러그에서 개발한 IDN 서비스 사용자를 대상으로
+              시스템의 주요 기능과 화면 구성, 그리고 각 기능별 사용 방법을
+              이해하기 쉽도록 설명하기 위해 작성된 문서이다.
+            </p>
+            <p>
+              일반 사용자는 홈, 네트워크, 멤버, 요청, 설정 메뉴를 사용하여
+              자신의 연결 상태와 요청 현황을 확인하고, 필요한 범위 내에서
+              네트워크와 장치를 관리할 수 있다.
+            </p>
+            <p>
+              실제 사용에서는 로그인 후 홈 화면에서 오늘 확인할 항목을 점검하고,
+              필요한 경우 클라이언트 설치 파일을 내려받아 IDNClient를 설치한
+              다음, 네트워크와 멤버 정보를 확인하고 요청 처리와 설정 변경으로
+              이어서 작업하는 흐름이 가장 자연스럽다.
+            </p>
             <article class="manual-article" id="1-1-작성-목적">
               <h3>1.1 작성 목적</h3>
-              <p>본 문서의 목적은 일반 사용자가 IDN 서비스에서 제공하는 주요 기능을 정확하게 이해하고, 실제 사용 환경에서 필요한 작업을 원활하게 수행할 수 있도록 지원하는 데 있다.</p>
+              <p>
+                본 문서의 목적은 일반 사용자가 IDN 서비스에서 제공하는 주요
+                기능을 정확하게 이해하고, 실제 사용 환경에서 필요한 작업을
+                원활하게 수행할 수 있도록 지원하는 데 있다.
+              </p>
             </article>
           </section>
           <section class="manual-section" id="2-로그인">
             <h2>2. 로그인</h2>
-            <p>일반 사용자는 로그인 화면에서 계정 ID와 비밀번호를 입력해 시스템에 접속한다.</p>
+            <p>
+              일반 사용자는 로그인 화면에서 계정 ID와 비밀번호를 입력해 시스템에
+              접속한다.
+            </p>
             <article class="manual-article" id="2-1-로그인">
               <h3>2.1 로그인</h3>
-              <p class="label-row"><span>▶</span><strong>메뉴 위치:</strong> 로그인 화면</p>
+              <p class="label-row">
+                <span>▶</span><strong>메뉴 위치:</strong> 로그인 화면
+              </p>
               <p class="label-row"><span>▶</span><strong>기능 설명:</strong></p>
               <p class="bullet-line">일반 사용자 계정으로 시스템에 접속한다.</p>
               <p class="label-row"><span>▶</span><strong>사용 절차:</strong></p>
@@ -107,12 +188,17 @@
                   </tbody>
                 </table>
               </div>
-              <p class="label-row"><span>▶</span><strong>처리 결과 / 유의사항:</strong></p>
+              <p class="label-row">
+                <span>▶</span><strong>처리 결과 / 유의사항:</strong>
+              </p>
               <p class="bullet-line">아이디 오입력 여부를 확인한다.</p>
               <p class="bullet-line">비밀번호 오입력 여부를 확인한다.</p>
               <p class="bullet-line">비밀번호 만료 여부를 확인한다.</p>
               <p class="bullet-line">계정 잠금 여부를 확인한다.</p>
-              <p class="bullet-line">로그인 후 상단 메뉴에서 홈, 네트워크, 멤버, 요청, 설정 메뉴를 사용할 수 있다.</p>
+              <p class="bullet-line">
+                로그인 후 상단 메뉴에서 홈, 네트워크, 멤버, 요청, 설정 메뉴를
+                사용할 수 있다.
+              </p>
               <p class="label-row"><span>▶</span><strong>스크린샷:</strong></p>
               <div class="table-wrap">
                 <table class="doc-table screenshot-table">
@@ -125,7 +211,14 @@
                   <tbody>
                     <tr>
                       <td>로그인 화면</td>
-                      <td><img class="manual-screenshot" src="../assets/images/manuals/user/login/2-1-로그인.png" alt="로그인 화면" loading="lazy" /></td>
+                      <td>
+                        <img
+                          class="manual-screenshot"
+                          src="../assets/images/manuals/user/login/2-1-로그인.png"
+                          alt="로그인 화면"
+                          loading="lazy"
+                        />
+                      </td>
                     </tr>
                   </tbody>
                 </table>
@@ -133,18 +226,33 @@
             </article>
             <article class="manual-article compact" id="2-2-로그인-실패-안내">
               <h3>2.2 로그인 실패 시 안내</h3>
-              <p class="bullet-line">아이디 또는 비밀번호를 잘못 입력한 경우 로그인에 실패할 수 있다.</p>
-              <p class="bullet-line">계정이 비활성화된 경우 로그인이 제한된다.</p>
-              <p class="bullet-line">일정 횟수 이상 비밀번호 입력을 실패해 잠금된 계정은 로그인이 제한된다.</p>
-              <p class="bullet-line">관리자에 의해 계정이 차단된 경우 접속할 수 없다.</p>
-              <p class="bullet-line">로그인 실패 시 화면에 표시되는 메시지를 먼저 확인하고, 필요한 경우 관리자에게 문의해 계정 상태를 점검한다.</p>
+              <p class="bullet-line">
+                아이디 또는 비밀번호를 잘못 입력한 경우 로그인에 실패할 수 있다.
+              </p>
+              <p class="bullet-line">
+                계정이 비활성화된 경우 로그인이 제한된다.
+              </p>
+              <p class="bullet-line">
+                일정 횟수 이상 비밀번호 입력을 실패해 잠금된 계정은 로그인이
+                제한된다.
+              </p>
+              <p class="bullet-line">
+                관리자에 의해 계정이 차단된 경우 접속할 수 없다.
+              </p>
+              <p class="bullet-line">
+                로그인 실패 시 화면에 표시되는 메시지를 먼저 확인하고, 필요한
+                경우 관리자에게 문의해 계정 상태를 점검한다.
+              </p>
             </article>
           </section>
           <section class="manual-section" id="3-공통-영역">
             <h2>3. 공통 영역</h2>
             <article class="manual-article" id="3-1-상단-메뉴">
               <h3>3.1 상단 메뉴</h3>
-              <p class="bullet-line">공통 영역은 모든 화면에서 제공되며 메뉴 이동과 사용자 관련 기능을 제공한다.</p>
+              <p class="bullet-line">
+                공통 영역은 모든 화면에서 제공되며 메뉴 이동과 사용자 관련
+                기능을 제공한다.
+              </p>
               <div class="table-wrap">
                 <table class="doc-table">
                   <thead>
@@ -185,8 +293,13 @@
             </article>
             <article class="manual-article compact">
               <h3>3.1.2 알림</h3>
-              <p class="bullet-line">시스템에서 발생한 주요 이벤트 및 안내 사항을 사용자에게 전달하는 영역이다.</p>
-              <p class="bullet-line">알림 아이콘을 통해 알림 목록을 조회할 수 있다.</p>
+              <p class="bullet-line">
+                시스템에서 발생한 주요 이벤트 및 안내 사항을 사용자에게 전달하는
+                영역이다.
+              </p>
+              <p class="bullet-line">
+                알림 아이콘을 통해 알림 목록을 조회할 수 있다.
+              </p>
               <div class="table-wrap">
                 <table class="doc-table">
                   <thead>
@@ -218,8 +331,13 @@
             </article>
             <article class="manual-article compact">
               <h3>3.1.3 사용자 메뉴</h3>
-              <p class="bullet-line">현재 로그인한 사용자 계정 정보 확인 및 로그아웃 기능을 제공하는 영역이다.</p>
-              <p class="bullet-line">헤더 우측의 사용자 아이콘을 클릭해 계정 정보를 확인한다.</p>
+              <p class="bullet-line">
+                현재 로그인한 사용자 계정 정보 확인 및 로그아웃 기능을 제공하는
+                영역이다.
+              </p>
+              <p class="bullet-line">
+                헤더 우측의 사용자 아이콘을 클릭해 계정 정보를 확인한다.
+              </p>
               <div class="table-wrap">
                 <table class="doc-table">
                   <thead>
@@ -257,31 +375,64 @@
               <p class="bullet-line">계정 잠금 여부</p>
             </article>
           </section>
-          <section class="manual-section" id="5-기능별-상세-설명">
-            <h2>5. 기능별 상세 설명</h2>
+          <section class="manual-section" id="4-기능별-상세-설명">
+            <h2>4. 기능별 상세 설명</h2>
           </section>
-          <section class="manual-section" id="5-1-홈">
-            <h2>5.1 홈</h2>
-            <p class="label-row"><span>▶</span><strong>메뉴 위치:</strong> 상단 메뉴 &gt; 홈</p>
+          <section class="manual-section" id="4-1-홈">
+            <h2>4.1 홈</h2>
+            <p class="label-row">
+              <span>▶</span><strong>메뉴 위치:</strong> 상단 메뉴 &gt; 홈
+            </p>
             <p class="label-row"><span>▶</span><strong>기능 설명:</strong></p>
-            <p class="bullet-line">요청/알림 요약과 참여 중인 네트워크 목록을 확인한다.</p>
-            <p class="bullet-line">선택한 네트워크에 속한 내 장치 상태를 상세 영역에서 확인할 수 있다.</p>
-            <p class="bullet-line">처음 사용하는 사용자는 홈을 시작 화면으로 보고 오늘 처리할 일과 현재 상태를 먼저 확인하면 된다.</p>
+            <p class="bullet-line">
+              요청/알림 요약과 참여 중인 네트워크 목록을 확인한다.
+            </p>
+            <p class="bullet-line">
+              선택한 네트워크에 속한 내 장치 상태를 상세 영역에서 확인할 수
+              있다.
+            </p>
+            <p class="bullet-line">
+              처음 사용하는 사용자는 홈을 시작 화면으로 보고 오늘 처리할 일과
+              현재 상태를 먼저 확인하면 된다.
+            </p>
             <p class="label-row"><span>▶</span><strong>사용 절차:</strong></p>
             <p class="step-line">1. 홈 메뉴를 선택한다.</p>
             <p class="step-line">2. 요청/알림 영역을 확인한다.</p>
-            <p class="step-line">3. 참여 중인 네트워크 목록에서 항목을 선택한다.</p>
-            <p class="step-line">4. 우측 상세 영역에서 내 장치 상태를 확인한다.</p>
+            <p class="step-line">
+              3. 참여 중인 네트워크 목록에서 항목을 선택한다.
+            </p>
+            <p class="step-line">
+              4. 우측 상세 영역에서 내 장치 상태를 확인한다.
+            </p>
             <p class="step-line">5. 필요 시 요청함 또는 설정으로 이동한다.</p>
-            <p class="label-row"><span>▶</span><strong>처리 결과 / 유의사항:</strong></p>
-            <p class="bullet-line">홈 알림은 읽지 않은 항목 기준으로 표시된다.</p>
-            <p class="bullet-line">네트워크 상세에는 해당 네트워크에서 본인에게 연결된 장치만 표시된다.</p>
-            <p class="bullet-line">클라이언트 다운로드와 메뉴얼 다운로드 링크를 시작 화면에서 바로 확인할 수 있다.</p>
-            <p class="bullet-line">장치 상태가 오프라인이면 네트워크 화면에서 해당 장치와 네트워크 상태를 다시 확인한다.</p>
-            <p class="bullet-line">새 초대나 승인 알림이 보이면 요청 화면으로 이동해 실제 처리 상태를 이어서 확인한다.</p>
+            <p class="label-row">
+              <span>▶</span><strong>처리 결과 / 유의사항:</strong>
+            </p>
+            <p class="bullet-line">
+              홈 알림은 읽지 않은 항목 기준으로 표시된다.
+            </p>
+            <p class="bullet-line">
+              네트워크 상세에는 해당 네트워크에서 본인에게 연결된 장치만
+              표시된다.
+            </p>
+            <p class="bullet-line">
+              클라이언트 다운로드와 메뉴얼 다운로드 링크를 시작 화면에서 바로
+              확인할 수 있다.
+            </p>
+            <p class="bullet-line">
+              장치 상태가 오프라인이면 네트워크 화면에서 해당 장치와 네트워크
+              상태를 다시 확인한다.
+            </p>
+            <p class="bullet-line">
+              새 초대나 승인 알림이 보이면 요청 화면으로 이동해 실제 처리 상태를
+              이어서 확인한다.
+            </p>
             <article class="manual-article">
-              <h3>5.1.1 주요 기능 바로가기</h3>
-              <p class="bullet-line">홈 화면에는 자주 사용하는 주요 기능으로 이동할 수 있는 바로가기 성격의 화면 구성이 제공된다.</p>
+              <h3>4.1.1 주요 기능 바로가기</h3>
+              <p class="bullet-line">
+                홈 화면에는 자주 사용하는 주요 기능으로 이동할 수 있는 바로가기
+                성격의 화면 구성이 제공된다.
+              </p>
               <div class="table-wrap">
                 <table class="doc-table">
                   <thead>
@@ -312,12 +463,28 @@
               </div>
             </article>
             <article class="manual-article">
-              <h3>5.1.2 클라이언트 다운로드</h3>
-              <p class="bullet-line">홈 화면에서 운영체제에 맞는 클라이언트 설치 파일을 다운로드할 수 있다.</p>
-              <p class="step-line">1. 홈 화면에서 `클라이언트 다운로드` 버튼을 클릭한다.</p>
-              <p class="step-line">2. 운영체제 선택 모달이 표시되는지 확인한다.</p>
-              <p class="step-line">3. 모달에서 본인 환경에 맞는 운영체제 버튼을 선택한다.</p>
-              <p class="step-line">4. 선택한 운영체제에 맞는 설치 파일이 다운로드되는지 확인한다.</p>
+              <h3>4.1.2 클라이언트 다운로드</h3>
+              <p class="bullet-line">
+                홈 화면에서 운영체제에 맞는 클라이언트 설치 파일을 다운로드할 수
+                있다.
+              </p>
+              <p class="step-line">
+                1. 홈 화면에서 `클라이언트 다운로드` 버튼을 클릭한다.
+              </p>
+              <p class="step-line">
+                2. 운영체제 선택 모달이 표시되는지 확인한다.
+              </p>
+              <p class="step-line">
+                3. 모달에서 본인 환경에 맞는 운영체제 버튼을 선택한다.
+              </p>
+              <p class="step-line">
+                4. 선택한 운영체제에 맞는 설치 파일이 다운로드되는지 확인한다.
+              </p>
+              <p class="bullet-line">
+                설치 파일은 현재 사용 중인 운영 환경에 맞는 패키지를 받아야
+                하며, 전달받은 파일과 다른 환경용 설치 파일을 임의로 사용하면 안
+                된다.
+              </p>
               <div class="table-wrap">
                 <table class="doc-table">
                   <thead>
@@ -348,9 +515,15 @@
               </div>
             </article>
             <article class="manual-article">
-              <h3>5.1.3 내 연결 요약</h3>
-              <p class="bullet-line">홈 화면에서는 참여 중인 연결 목록과 각 연결의 연결 상태를 요약해 표시한다.</p>
-              <p class="bullet-line">`전체 보기`를 클릭하면 네트워크 화면으로 이동해 상세 연결 목록을 확인할 수 있다.</p>
+              <h3>4.1.3 내 연결 요약</h3>
+              <p class="bullet-line">
+                홈 화면에서는 참여 중인 연결 목록과 각 연결의 연결 상태를 요약해
+                표시한다.
+              </p>
+              <p class="bullet-line">
+                `전체 보기`를 클릭하면 네트워크 화면으로 이동해 상세 연결 목록을
+                확인할 수 있다.
+              </p>
               <div class="table-wrap">
                 <table class="doc-table">
                   <thead>
@@ -388,7 +561,14 @@
                 <tbody>
                   <tr>
                     <td>홈 화면</td>
-                    <td><img class="manual-screenshot" src="../assets/images/manuals/user/home/user-home-main.png" alt="홈 화면" loading="lazy" /></td>
+                    <td>
+                      <img
+                        class="manual-screenshot"
+                        src="../assets/images/manuals/user/home/user-home-main.png"
+                        alt="홈 화면"
+                        loading="lazy"
+                      />
+                    </td>
                   </tr>
                 </tbody>
               </table>
@@ -405,21 +585,40 @@
                 <tbody>
                   <tr>
                     <td>홈 장치 상태 패널</td>
-                    <td><img class="manual-screenshot" src="../assets/images/manuals/user/home/5-1-홈-장치-상태.png" alt="홈 장치 상태 패널" loading="lazy" /></td>
+                    <td>
+                      <img
+                        class="manual-screenshot"
+                        src="../assets/images/manuals/user/home/5-1-홈-장치-상태.png"
+                        alt="홈 장치 상태 패널"
+                        loading="lazy"
+                      />
+                    </td>
                   </tr>
                 </tbody>
               </table>
             </div>
           </section>
-          <section class="manual-section" id="5-2-네트워크">
-            <h2>5.2 네트워크</h2>
-            <p class="label-row"><span>▶</span><strong>메뉴 위치:</strong> 상단 메뉴 &gt; 네트워크</p>
+          <section class="manual-section" id="4-2-네트워크">
+            <h2>4.2 네트워크</h2>
+            <p class="label-row">
+              <span>▶</span><strong>메뉴 위치:</strong> 상단 메뉴 &gt; 네트워크
+            </p>
             <p class="label-row"><span>▶</span><strong>기능 설명:</strong></p>
             <p class="bullet-line">참여 중인 네트워크 목록을 조회한다.</p>
-            <p class="bullet-line">새 네트워크 생성, 네트워크 상세 보기, 네트워크 수정과 삭제, 장치 생성과 수정, 멤버 초대를 수행할 수 있다.</p>
-            <p class="bullet-line">소유자 여부에 따라 편집 가능 범위가 달라질 수 있다.</p>
-            <p class="bullet-line">네트워크 화면은 실제 사용 자원을 확인하는 핵심 화면으로, 이름보다 상태와 연결 구조를 먼저 읽는 것이 중요하다.</p>
-            <p class="label-row"><span>▶</span><strong>화면에서 먼저 이해할 항목:</strong></p>
+            <p class="bullet-line">
+              새 네트워크 생성, 네트워크 상세 보기, 네트워크 수정과 삭제, 장치
+              생성과 수정, 멤버 초대를 수행할 수 있다.
+            </p>
+            <p class="bullet-line">
+              소유자 여부에 따라 편집 가능 범위가 달라질 수 있다.
+            </p>
+            <p class="bullet-line">
+              네트워크 화면은 실제 사용 자원을 확인하는 핵심 화면으로, 이름보다
+              상태와 연결 구조를 먼저 읽는 것이 중요하다.
+            </p>
+            <p class="label-row">
+              <span>▶</span><strong>화면에서 먼저 이해할 항목:</strong>
+            </p>
             <div class="table-wrap">
               <table class="doc-table">
                 <thead>
@@ -444,21 +643,49 @@
                 </tbody>
               </table>
             </div>
-            <p class="label-row"><span>▶</span><strong>처리 결과 / 유의사항:</strong></p>
-            <p class="bullet-line">네트워크 소유자는 네트워크 수정, 삭제, 장치 생성, 수정, 삭제, 사용자 초대가 가능하다.</p>
-            <p class="bullet-line">장치 사용자는 본인 장치 별칭 수정이 가능하다.</p>
+            <p class="label-row">
+              <span>▶</span><strong>처리 결과 / 유의사항:</strong>
+            </p>
+            <p class="bullet-line">
+              네트워크 소유자는 네트워크 수정, 삭제, 장치 생성, 수정, 삭제,
+              사용자 초대가 가능하다.
+            </p>
+            <p class="bullet-line">
+              장치 사용자는 본인 장치 별칭 수정이 가능하다.
+            </p>
             <p class="bullet-line">일반 참여자는 조회 위주로 사용한다.</p>
-            <p class="bullet-line">검색 기준으로 네트워크 이름, 컨트롤러, 네트워크 대역을 사용할 수 있다.</p>
-            <p class="bullet-line">상세 화면에서는 장치 상태, 사용자 할당, 단말 접속 허용, 외부 트래픽 허용 여부를 함께 확인한다.</p>
-            <p class="bullet-line">새 네트워크 생성 전에는 함께 사용할 멤버를 먼저 정리하면 작업이 빠르다.</p>
-            <p class="bullet-line">네트워크 작업 후에는 목록 반영 여부와 상세 화면의 장치 상태 변화를 함께 확인해야 정상이다.</p>
+            <p class="bullet-line">
+              검색 기준으로 네트워크 이름, 컨트롤러, 네트워크 대역을 사용할 수
+              있다.
+            </p>
+            <p class="bullet-line">
+              상세 화면에서는 장치 상태, 사용자 할당, 단말 접속 허용, 외부
+              트래픽 허용 여부를 함께 확인한다.
+            </p>
+            <p class="bullet-line">
+              새 네트워크 생성 전에는 함께 사용할 멤버를 먼저 정리하면 작업이
+              빠르다.
+            </p>
+            <p class="bullet-line">
+              네트워크 작업 후에는 목록 반영 여부와 상세 화면의 장치 상태 변화를
+              함께 확인해야 정상이다.
+            </p>
             <article class="manual-article">
-              <h3>5.2.1 네트워크 조회</h3>
-              <p class="bullet-line">참여 중인 네트워크를 목록에서 조회하고 검색과 필터를 사용할 수 있다.</p>
+              <h3>4.2.1 네트워크 조회</h3>
+              <p class="bullet-line">
+                참여 중인 네트워크를 목록에서 조회하고 검색과 필터를 사용할 수
+                있다.
+              </p>
               <p class="step-line">1. 네트워크 메뉴를 선택한다.</p>
-              <p class="step-line">2. 네트워크 이름, 컨트롤러, 네트워크 대역 기준으로 검색한다.</p>
-              <p class="step-line">3. 필요 시 암호화 알고리즘과 기기 인증 여부 필터를 적용한다.</p>
-              <p class="step-line">4. 원하는 네트워크 카드를 선택해 상세 화면을 연다.</p>
+              <p class="step-line">
+                2. 네트워크 이름, 컨트롤러, 네트워크 대역 기준으로 검색한다.
+              </p>
+              <p class="step-line">
+                3. 필요 시 암호화 알고리즘과 기기 인증 여부 필터를 적용한다.
+              </p>
+              <p class="step-line">
+                4. 원하는 네트워크 카드를 선택해 상세 화면을 연다.
+              </p>
               <div class="table-wrap">
                 <table class="doc-table screenshot-table">
                   <thead>
@@ -470,20 +697,39 @@
                   <tbody>
                     <tr>
                       <td>네트워크 화면</td>
-                      <td><img class="manual-screenshot" src="../assets/images/manuals/user/network/5-2-네트워크.png" alt="네트워크 화면" loading="lazy" /></td>
+                      <td>
+                        <img
+                          class="manual-screenshot"
+                          src="../assets/images/manuals/user/network/5-2-네트워크.png"
+                          alt="네트워크 화면"
+                          loading="lazy"
+                        />
+                      </td>
                     </tr>
                   </tbody>
                 </table>
               </div>
             </article>
             <article class="manual-article">
-              <h3>5.2.2 네트워크 생성</h3>
-              <p class="bullet-line">원클릭 오케스트레이션은 3단계로 진행되며, 먼저 사용자를 선택한 뒤 네트워크 정보를 입력하고 마지막 단계에서 요약 정보를 확인한 후 생성한다.</p>
+              <h3>4.2.2 네트워크 생성</h3>
+              <p class="bullet-line">
+                원클릭 오케스트레이션은 3단계로 진행되며, 먼저 사용자를 선택한
+                뒤 네트워크 정보를 입력하고 마지막 단계에서 요약 정보를 확인한
+                후 생성한다.
+              </p>
               <p class="step-line">1. `새 네트워크 생성` 버튼을 클릭한다.</p>
-              <p class="step-line">2. 1단계에서 함께 사용할 사용자를 선택한다.</p>
-              <p class="step-line">3. 2단계에서 별칭, 컨트롤러, 중계서버 정보를 입력한다.</p>
-              <p class="step-line">4. 3단계에서 요약 정보를 확인한 후 생성한다.</p>
-              <p class="step-line">5. 생성 후 목록에 새 네트워크가 보이는지 확인한다.</p>
+              <p class="step-line">
+                2. 1단계에서 함께 사용할 사용자를 선택한다.
+              </p>
+              <p class="step-line">
+                3. 2단계에서 별칭, 컨트롤러, 중계서버 정보를 입력한다.
+              </p>
+              <p class="step-line">
+                4. 3단계에서 요약 정보를 확인한 후 생성한다.
+              </p>
+              <p class="step-line">
+                5. 생성 후 목록에 새 네트워크가 보이는지 확인한다.
+              </p>
               <div class="table-wrap">
                 <table class="doc-table screenshot-table">
                   <thead>
@@ -495,31 +741,74 @@
                   <tbody>
                     <tr>
                       <td>원클릭 오케스트레이션 1단계 - 사용자 선택</td>
-                      <td><img class="manual-screenshot" src="../assets/images/manuals/user/network/user-network-create-step-1.png" alt="원클릭 오케스트레이션 1단계 사용자 선택" loading="lazy" /></td>
+                      <td>
+                        <img
+                          class="manual-screenshot"
+                          src="../assets/images/manuals/user/network/user-network-create-step-1.png"
+                          alt="원클릭 오케스트레이션 1단계 사용자 선택"
+                          loading="lazy"
+                        />
+                      </td>
                     </tr>
                     <tr>
                       <td>원클릭 오케스트레이션 2단계 - 네트워크 정보 입력</td>
-                      <td><img class="manual-screenshot" src="../assets/images/manuals/user/network/user-network-create-step-2.png" alt="원클릭 오케스트레이션 2단계 네트워크 정보 입력" loading="lazy" /></td>
+                      <td>
+                        <img
+                          class="manual-screenshot"
+                          src="../assets/images/manuals/user/network/user-network-create-step-2.png"
+                          alt="원클릭 오케스트레이션 2단계 네트워크 정보 입력"
+                          loading="lazy"
+                        />
+                      </td>
                     </tr>
                     <tr>
                       <td>원클릭 오케스트레이션 3단계 - 요약 정보 확인</td>
-                      <td><img class="manual-screenshot" src="../assets/images/manuals/user/network/user-network-create-step-3-summary.png" alt="원클릭 오케스트레이션 3단계 요약 정보 확인" loading="lazy" /></td>
+                      <td>
+                        <img
+                          class="manual-screenshot"
+                          src="../assets/images/manuals/user/network/user-network-create-step-3-summary.png"
+                          alt="원클릭 오케스트레이션 3단계 요약 정보 확인"
+                          loading="lazy"
+                        />
+                      </td>
                     </tr>
                   </tbody>
                 </table>
               </div>
             </article>
             <article class="manual-article">
-              <h3>5.2.3 네트워크 상세 조회</h3>
-              <p class="bullet-line">네트워크 상세 화면에서 상단 정보줄, 좌측 장치 목록, 중앙 연결도, 장치 상태를 확인한다.</p>
+              <h3>4.2.3 네트워크 상세 조회</h3>
+              <p class="bullet-line">
+                네트워크 상세 화면에서 상단 정보줄, 좌측 장치 목록, 중앙 연결도,
+                장치 상태를 확인한다.
+              </p>
               <p class="step-line">1. 네트워크 카드를 클릭한다.</p>
-              <p class="step-line">2. 상단 정보줄에서 컨트롤러, IP 대역, 암호화 방식, 기기 인증 여부를 확인한다.</p>
-              <p class="step-line">3. 좌측 장치 목록과 중앙 연결도에서 장치를 선택한다.</p>
-              <p class="step-line">4. 장치명, 주소, 상태, 사용자, 역할, 접속 허용 상태를 확인한다.</p>
-              <p class="bullet-line">기기 목록 영역은 연결의 소유 여부에 따라 기능과 표기 방식이 다르게 제공된다.</p>
-              <p class="bullet-line">연결 소유자인 경우에는 기기 목록 상단에 `장치 생성` 버튼이 표시되고, 각 기기 항목의 메뉴 아이콘에서 `초대`, `수정`, `삭제`를 실행할 수 있다.</p>
-              <p class="bullet-line">사용자에게 할당된 기기에는 `내 기기` 뱃지가 표시된다.</p>
-              <p class="bullet-line">할당된 연결인 경우에는 `장치 생성` 버튼과 기기별 메뉴 아이콘이 표시되지 않으며, 조회 중심으로 사용할 수 있다.</p>
+              <p class="step-line">
+                2. 상단 정보줄에서 컨트롤러, IP 대역, 암호화 방식, 기기 인증
+                여부를 확인한다.
+              </p>
+              <p class="step-line">
+                3. 좌측 장치 목록과 중앙 연결도에서 장치를 선택한다.
+              </p>
+              <p class="step-line">
+                4. 장치명, 주소, 상태, 사용자, 역할, 접속 허용 상태를 확인한다.
+              </p>
+              <p class="bullet-line">
+                기기 목록 영역은 연결의 소유 여부에 따라 기능과 표기 방식이
+                다르게 제공된다.
+              </p>
+              <p class="bullet-line">
+                연결 소유자인 경우에는 기기 목록 상단에 `장치 생성` 버튼이
+                표시되고, 각 기기 항목의 메뉴 아이콘에서 `초대`, `수정`,
+                `삭제`를 실행할 수 있다.
+              </p>
+              <p class="bullet-line">
+                사용자에게 할당된 기기에는 `내 기기` 뱃지가 표시된다.
+              </p>
+              <p class="bullet-line">
+                할당된 연결인 경우에는 `장치 생성` 버튼과 기기별 메뉴 아이콘이
+                표시되지 않으며, 조회 중심으로 사용할 수 있다.
+              </p>
               <div class="table-wrap">
                 <table class="doc-table screenshot-table">
                   <thead>
@@ -531,19 +820,38 @@
                   <tbody>
                     <tr>
                       <td>네트워크 상세 화면</td>
-                      <td><img class="manual-screenshot" src="../assets/images/manuals/user/network/5-2-네트워크-상세.png" alt="네트워크 상세 화면" loading="lazy" /></td>
+                      <td>
+                        <img
+                          class="manual-screenshot"
+                          src="../assets/images/manuals/user/network/5-2-네트워크-상세.png"
+                          alt="네트워크 상세 화면"
+                          loading="lazy"
+                        />
+                      </td>
                     </tr>
                   </tbody>
                 </table>
               </div>
             </article>
             <article class="manual-article">
-              <h3>5.2.4 네트워크 수정</h3>
-              <p class="bullet-line">네트워크 카드 또는 상세 화면의 작업 메뉴에서 수정 화면을 열어 별칭과 운영 옵션을 변경한다.</p>
-              <p class="step-line">1. 네트워크 카드 우측 상단 `더보기` 메뉴에서 `수정`을 선택한다.</p>
-              <p class="step-line">2. 별칭, 연결 장비, 자동 삭제 조건을 수정한다.</p>
-              <p class="step-line">3. 저장 후 목록과 상세 화면에 반영됐는지 확인한다.</p>
-              <p class="bullet-line">수정 시 주로 확인하는 항목은 네트워크 별칭, 삭제 예정일, 단말 접속 허용, 외부 트래픽 허용이다.</p>
+              <h3>4.2.4 네트워크 수정</h3>
+              <p class="bullet-line">
+                네트워크 카드 또는 상세 화면의 작업 메뉴에서 수정 화면을 열어
+                별칭과 운영 옵션을 변경한다.
+              </p>
+              <p class="step-line">
+                1. 네트워크 카드 우측 상단 `더보기` 메뉴에서 `수정`을 선택한다.
+              </p>
+              <p class="step-line">
+                2. 별칭, 연결 장비, 자동 삭제 조건을 수정한다.
+              </p>
+              <p class="step-line">
+                3. 저장 후 목록과 상세 화면에 반영됐는지 확인한다.
+              </p>
+              <p class="bullet-line">
+                수정 시 주로 확인하는 항목은 네트워크 별칭, 삭제 예정일, 단말
+                접속 허용, 외부 트래픽 허용이다.
+              </p>
               <div class="table-wrap">
                 <table class="doc-table screenshot-table">
                   <thead>
@@ -555,20 +863,37 @@
                   <tbody>
                     <tr>
                       <td>네트워크 수정 화면</td>
-                      <td><img class="manual-screenshot" src="../assets/images/manuals/user/network/user-network-edit.png" alt="네트워크 수정 화면" loading="lazy" /></td>
+                      <td>
+                        <img
+                          class="manual-screenshot"
+                          src="../assets/images/manuals/user/network/user-network-edit.png"
+                          alt="네트워크 수정 화면"
+                          loading="lazy"
+                        />
+                      </td>
                     </tr>
                   </tbody>
                 </table>
               </div>
             </article>
             <article class="manual-article">
-              <h3>5.2.5 네트워크 삭제</h3>
-              <p class="bullet-line">네트워크 카드 또는 상세 화면의 삭제 메뉴에서 삭제 확인 팝업을 거쳐 네트워크를 제거한다.</p>
+              <h3>4.2.5 네트워크 삭제</h3>
+              <p class="bullet-line">
+                네트워크 카드 또는 상세 화면의 삭제 메뉴에서 삭제 확인 팝업을
+                거쳐 네트워크를 제거한다.
+              </p>
               <p class="step-line">1. `더보기` 메뉴에서 `삭제`를 선택한다.</p>
-              <p class="step-line">2. `네트워크 삭제 확인` 팝업에서 대상을 확인한다.</p>
+              <p class="step-line">
+                2. `네트워크 삭제 확인` 팝업에서 대상을 확인한다.
+              </p>
               <p class="step-line">3. `삭제` 버튼을 눌러 확정한다.</p>
-              <p class="step-line">4. 네트워크 목록에서 제거 여부를 확인한다.</p>
-              <p class="bullet-line">네트워크 삭제 시 포함된 장치와 연결 정보에도 영향이 있을 수 있으므로 참여 멤버와 사용 목적을 먼저 확인한다.</p>
+              <p class="step-line">
+                4. 네트워크 목록에서 제거 여부를 확인한다.
+              </p>
+              <p class="bullet-line">
+                네트워크 삭제 시 포함된 장치와 연결 정보에도 영향이 있을 수
+                있으므로 참여 멤버와 사용 목적을 먼저 확인한다.
+              </p>
               <div class="table-wrap">
                 <table class="doc-table screenshot-table">
                   <thead>
@@ -580,19 +905,38 @@
                   <tbody>
                     <tr>
                       <td>네트워크 삭제 확인 팝업</td>
-                      <td><img class="manual-screenshot" src="../assets/images/manuals/user/network/user-network-delete-confirm.png" alt="네트워크 삭제 확인 팝업" loading="lazy" /></td>
+                      <td>
+                        <img
+                          class="manual-screenshot"
+                          src="../assets/images/manuals/user/network/user-network-delete-confirm.png"
+                          alt="네트워크 삭제 확인 팝업"
+                          loading="lazy"
+                        />
+                      </td>
                     </tr>
                   </tbody>
                 </table>
               </div>
             </article>
             <article class="manual-article">
-              <h3>5.2.6 장치 생성</h3>
-              <p class="bullet-line">네트워크 상세 화면의 `장치 생성` 버튼으로 새 장치를 추가한다.</p>
-              <p class="step-line">1. 네트워크 상세 화면에서 `장치 생성` 버튼을 클릭한다.</p>
-              <p class="step-line">2. 연결, 기기 이름, 역할, 네트워크 주소 정보를 입력한다.</p>
-              <p class="step-line">3. 저장 후 좌측 장치 목록과 연결도에 새 장치가 표시되는지 확인한다.</p>
-              <p class="bullet-line">이 기능은 연결 소유자에게만 제공되며, 생성 요청은 승인 후 실제 기기 정보에 반영된다.</p>
+              <h3>4.2.6 장치 생성</h3>
+              <p class="bullet-line">
+                네트워크 상세 화면의 `장치 생성` 버튼으로 새 장치를 추가한다.
+              </p>
+              <p class="step-line">
+                1. 네트워크 상세 화면에서 `장치 생성` 버튼을 클릭한다.
+              </p>
+              <p class="step-line">
+                2. 연결, 기기 이름, 역할, 네트워크 주소 정보를 입력한다.
+              </p>
+              <p class="step-line">
+                3. 저장 후 좌측 장치 목록과 연결도에 새 장치가 표시되는지
+                확인한다.
+              </p>
+              <p class="bullet-line">
+                이 기능은 연결 소유자에게만 제공되며, 생성 요청은 승인 후 실제
+                기기 정보에 반영된다.
+              </p>
               <div class="table-wrap">
                 <table class="doc-table">
                   <thead>
@@ -603,18 +947,73 @@
                     </tr>
                   </thead>
                   <tbody>
-                    <tr><td>연결</td><td>기기가 속할 연결</td><td>토폴로지 화면에서 선택된 연결로 자동 지정</td></tr>
-                    <tr><td>기기 이름</td><td>기기 식별 이름</td><td>영문, 숫자, 일부 특수문자(-)만 사용 가능하며 중복 불가</td></tr>
-                    <tr><td>역할</td><td>연결 내 기기의 역할</td><td>HOST 또는 GATEWAY 중 하나를 선택</td></tr>
-                    <tr><td>네트워크 주소</td><td>가상 IP 주소</td><td>자동 배정 또는 8, 16, 24 비트 단위로 직접 입력</td></tr>
-                    <tr><td>네트워크 인터페이스</td><td>장치 연결 통로 명칭</td><td>GATEWAY 역할일 때 서버 인터페이스 이름 입력</td></tr>
-                    <tr><td>UUID</td><td>기기 고유 식별 번호</td><td>GATEWAY 역할일 때 서버 소프트웨어에서 발급된 고유 번호 입력</td></tr>
-                    <tr><td>MAC 주소</td><td>기기 물리 식별 번호</td><td>GATEWAY 역할일 때 `00:11:22:33:44:55` 형식으로 입력</td></tr>
-                    <tr><td>리다이렉트</td><td>트래픽 전환 기능 설정</td><td>토글 스위치로 사용 여부 설정</td></tr>
-                    <tr><td>리다이렉트 인터페이스</td><td>인터페이스 명칭</td><td>트래픽이 전환될 대상 인터페이스 명칭 입력</td></tr>
-                    <tr><td>리다이렉트 IP</td><td>리다이렉트 대상 IP</td><td>`리다이렉트 IP 추가` 버튼으로 대상 IP 주소 입력</td></tr>
-                    <tr><td>단말 접속</td><td>장치 접속 허용 여부</td><td>체크 시 가상 네트워크 접속 허용</td></tr>
-                    <tr><td>외부 트래픽</td><td>외부 인터넷 통신 허용 여부</td><td>체크 시 외부 인터넷 통신 허용</td></tr>
+                    <tr>
+                      <td>연결</td>
+                      <td>기기가 속할 연결</td>
+                      <td>토폴로지 화면에서 선택된 연결로 자동 지정</td>
+                    </tr>
+                    <tr>
+                      <td>기기 이름</td>
+                      <td>기기 식별 이름</td>
+                      <td>
+                        영문, 숫자, 일부 특수문자(-)만 사용 가능하며 중복 불가
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>역할</td>
+                      <td>연결 내 기기의 역할</td>
+                      <td>HOST 또는 GATEWAY 중 하나를 선택</td>
+                    </tr>
+                    <tr>
+                      <td>네트워크 주소</td>
+                      <td>가상 IP 주소</td>
+                      <td>자동 배정 또는 8, 16, 24 비트 단위로 직접 입력</td>
+                    </tr>
+                    <tr>
+                      <td>네트워크 인터페이스</td>
+                      <td>장치 연결 통로 명칭</td>
+                      <td>GATEWAY 역할일 때 서버 인터페이스 이름 입력</td>
+                    </tr>
+                    <tr>
+                      <td>UUID</td>
+                      <td>기기 고유 식별 번호</td>
+                      <td>
+                        GATEWAY 역할일 때 서버 소프트웨어에서 발급된 고유 번호
+                        입력
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>MAC 주소</td>
+                      <td>기기 물리 식별 번호</td>
+                      <td>
+                        GATEWAY 역할일 때 `00:11:22:33:44:55` 형식으로 입력
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>리다이렉트</td>
+                      <td>트래픽 전환 기능 설정</td>
+                      <td>토글 스위치로 사용 여부 설정</td>
+                    </tr>
+                    <tr>
+                      <td>리다이렉트 인터페이스</td>
+                      <td>인터페이스 명칭</td>
+                      <td>트래픽이 전환될 대상 인터페이스 명칭 입력</td>
+                    </tr>
+                    <tr>
+                      <td>리다이렉트 IP</td>
+                      <td>리다이렉트 대상 IP</td>
+                      <td>`리다이렉트 IP 추가` 버튼으로 대상 IP 주소 입력</td>
+                    </tr>
+                    <tr>
+                      <td>단말 접속</td>
+                      <td>장치 접속 허용 여부</td>
+                      <td>체크 시 가상 네트워크 접속 허용</td>
+                    </tr>
+                    <tr>
+                      <td>외부 트래픽</td>
+                      <td>외부 인터넷 통신 허용 여부</td>
+                      <td>체크 시 외부 인터넷 통신 허용</td>
+                    </tr>
                   </tbody>
                 </table>
               </div>
@@ -629,20 +1028,37 @@
                   <tbody>
                     <tr>
                       <td>장치 생성 화면</td>
-                      <td><img class="manual-screenshot" src="../assets/images/manuals/user/network/user-device-create.png" alt="장치 생성 화면" loading="lazy" /></td>
+                      <td>
+                        <img
+                          class="manual-screenshot"
+                          src="../assets/images/manuals/user/network/user-device-create.png"
+                          alt="장치 생성 화면"
+                          loading="lazy"
+                        />
+                      </td>
                     </tr>
                   </tbody>
                 </table>
               </div>
             </article>
             <article class="manual-article">
-              <h3>5.2.7 장치 수정</h3>
-              <p class="bullet-line">장치 액션 메뉴에서 수정 화면을 열어 별칭 또는 네트워크 정보를 변경한다.</p>
-              <p class="step-line">1. 좌측 장치 목록에서 장치 오른쪽 `더보기` 메뉴를 클릭한다.</p>
+              <h3>4.2.7 장치 수정</h3>
+              <p class="bullet-line">
+                장치 액션 메뉴에서 수정 화면을 열어 별칭 또는 네트워크 정보를
+                변경한다.
+              </p>
+              <p class="step-line">
+                1. 좌측 장치 목록에서 장치 오른쪽 `더보기` 메뉴를 클릭한다.
+              </p>
               <p class="step-line">2. `수정`을 선택한다.</p>
               <p class="step-line">3. 장치 정보를 수정한다.</p>
-              <p class="step-line">4. 저장 후 장치 정보 패널에 반영됐는지 확인한다.</p>
-              <p class="bullet-line">이 기능은 연결 소유자에게만 제공되며, 수정 요청은 승인 후 실제 기기 정보에 적용된다.</p>
+              <p class="step-line">
+                4. 저장 후 장치 정보 패널에 반영됐는지 확인한다.
+              </p>
+              <p class="bullet-line">
+                이 기능은 연결 소유자에게만 제공되며, 수정 요청은 승인 후 실제
+                기기 정보에 적용된다.
+              </p>
               <div class="table-wrap">
                 <table class="doc-table">
                   <thead>
@@ -653,11 +1069,34 @@
                     </tr>
                   </thead>
                   <tbody>
-                    <tr><td>연결</td><td>기기가 속한 연결</td><td>수정 불가</td></tr>
-                    <tr><td>장치 이름</td><td>단말 식별 이름</td><td>수정 불가</td></tr>
-                    <tr><td>네트워크 주소</td><td>가상 IP 주소</td><td>동작 중인 장치는 수정할 수 없으며 자동 또는 직접 입력 가능</td></tr>
-                    <tr><td>단말 접속</td><td>장치 접속 허용 여부</td><td>체크 시 가상 네트워크 접속 허용</td></tr>
-                    <tr><td>외부 트래픽</td><td>외부 인터넷 통신 허용 여부</td><td>체크 시 외부 인터넷 통신 허용</td></tr>
+                    <tr>
+                      <td>연결</td>
+                      <td>기기가 속한 연결</td>
+                      <td>수정 불가</td>
+                    </tr>
+                    <tr>
+                      <td>장치 이름</td>
+                      <td>단말 식별 이름</td>
+                      <td>수정 불가</td>
+                    </tr>
+                    <tr>
+                      <td>네트워크 주소</td>
+                      <td>가상 IP 주소</td>
+                      <td>
+                        동작 중인 장치는 수정할 수 없으며 자동 또는 직접 입력
+                        가능
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>단말 접속</td>
+                      <td>장치 접속 허용 여부</td>
+                      <td>체크 시 가상 네트워크 접속 허용</td>
+                    </tr>
+                    <tr>
+                      <td>외부 트래픽</td>
+                      <td>외부 인터넷 통신 허용 여부</td>
+                      <td>체크 시 외부 인터넷 통신 허용</td>
+                    </tr>
                   </tbody>
                 </table>
               </div>
@@ -672,20 +1111,38 @@
                   <tbody>
                     <tr>
                       <td>장치 수정 화면</td>
-                      <td><img class="manual-screenshot" src="../assets/images/manuals/user/network/user-device-edit.png" alt="장치 수정 화면" loading="lazy" /></td>
+                      <td>
+                        <img
+                          class="manual-screenshot"
+                          src="../assets/images/manuals/user/network/user-device-edit.png"
+                          alt="장치 수정 화면"
+                          loading="lazy"
+                        />
+                      </td>
                     </tr>
                   </tbody>
                 </table>
               </div>
             </article>
             <article class="manual-article">
-              <h3>5.2.8 장치 삭제</h3>
-              <p class="bullet-line">장치 액션 메뉴에서 삭제를 선택해 장치를 제거한다.</p>
-              <p class="step-line">1. 장치의 액션 메뉴에서 `삭제`를 클릭한다.</p>
-              <p class="step-line">2. 삭제 확인 팝업에서 장치 이름을 확인한다.</p>
+              <h3>4.2.8 장치 삭제</h3>
+              <p class="bullet-line">
+                장치 액션 메뉴에서 삭제를 선택해 장치를 제거한다.
+              </p>
+              <p class="step-line">
+                1. 장치의 액션 메뉴에서 `삭제`를 클릭한다.
+              </p>
+              <p class="step-line">
+                2. 삭제 확인 팝업에서 장치 이름을 확인한다.
+              </p>
               <p class="step-line">3. `삭제`를 눌러 확정한다.</p>
-              <p class="step-line">4. 장치 목록과 연결도에서 제거 여부를 확인한다.</p>
-              <p class="bullet-line">이 기능은 연결 소유자에게만 제공되며, 삭제 요청은 승인 후 실제 삭제된다.</p>
+              <p class="step-line">
+                4. 장치 목록과 연결도에서 제거 여부를 확인한다.
+              </p>
+              <p class="bullet-line">
+                이 기능은 연결 소유자에게만 제공되며, 삭제 요청은 승인 후 실제
+                삭제된다.
+              </p>
               <div class="table-wrap">
                 <table class="doc-table screenshot-table">
                   <thead>
@@ -697,20 +1154,39 @@
                   <tbody>
                     <tr>
                       <td>장치 삭제 확인 팝업</td>
-                      <td><img class="manual-screenshot" src="../assets/images/manuals/user/network/user-device-delete-confirm.png" alt="장치 삭제 확인 팝업" loading="lazy" /></td>
+                      <td>
+                        <img
+                          class="manual-screenshot"
+                          src="../assets/images/manuals/user/network/user-device-delete-confirm.png"
+                          alt="장치 삭제 확인 팝업"
+                          loading="lazy"
+                        />
+                      </td>
                     </tr>
                   </tbody>
                 </table>
               </div>
             </article>
             <article class="manual-article">
-              <h3>5.2.9 멤버 초대</h3>
-              <p class="bullet-line">장치 액션 메뉴의 초대 기능으로 멤버를 찾아 네트워크 참여를 요청한다.</p>
-              <p class="step-line">1. 장치의 액션 메뉴에서 `초대`를 클릭한다.</p>
-              <p class="step-line">2. 사용자명, ID, 이메일, 휴대폰번호로 사용자를 검색한다.</p>
+              <h3>4.2.9 멤버 초대</h3>
+              <p class="bullet-line">
+                장치 액션 메뉴의 초대 기능으로 멤버를 찾아 네트워크 참여를
+                요청한다.
+              </p>
+              <p class="step-line">
+                1. 장치의 액션 메뉴에서 `초대`를 클릭한다.
+              </p>
+              <p class="step-line">
+                2. 사용자명, ID, 이메일, 휴대폰번호로 사용자를 검색한다.
+              </p>
               <p class="step-line">3. 초대할 사용자를 선택한다.</p>
-              <p class="step-line">4. 저장 후 장치 할당 정보 또는 요청 상태를 확인한다.</p>
-              <p class="bullet-line">해당 장치에 이미 사용자가 할당되어 있거나 사용자 할당 결재가 진행 중이면 초대할 수 없다.</p>
+              <p class="step-line">
+                4. 저장 후 장치 할당 정보 또는 요청 상태를 확인한다.
+              </p>
+              <p class="bullet-line">
+                해당 장치에 이미 사용자가 할당되어 있거나 사용자 할당 결재가
+                진행 중이면 초대할 수 없다.
+              </p>
               <div class="table-wrap">
                 <table class="doc-table screenshot-table">
                   <thead>
@@ -722,20 +1198,39 @@
                   <tbody>
                     <tr>
                       <td>멤버 초대 팝업</td>
-                      <td><img class="manual-screenshot" src="../assets/images/manuals/user/network/user-device-invite.png" alt="멤버 초대 팝업" loading="lazy" /></td>
+                      <td>
+                        <img
+                          class="manual-screenshot"
+                          src="../assets/images/manuals/user/network/user-device-invite.png"
+                          alt="멤버 초대 팝업"
+                          loading="lazy"
+                        />
+                      </td>
                     </tr>
                   </tbody>
                 </table>
               </div>
             </article>
             <article class="manual-article">
-              <h3>5.2.10 장치 할당 해제</h3>
-              <p class="bullet-line">사용자가 할당된 장치의 액션 메뉴에서 할당 해제를 수행한다.</p>
-              <p class="step-line">1. 사용자 할당이 된 장치의 액션 메뉴에서 `할당 해제`를 클릭한다.</p>
-              <p class="step-line">2. 확인 팝업에서 해제 대상을 다시 확인한다.</p>
+              <h3>4.2.10 장치 할당 해제</h3>
+              <p class="bullet-line">
+                사용자가 할당된 장치의 액션 메뉴에서 할당 해제를 수행한다.
+              </p>
+              <p class="step-line">
+                1. 사용자 할당이 된 장치의 액션 메뉴에서 `할당 해제`를 클릭한다.
+              </p>
+              <p class="step-line">
+                2. 확인 팝업에서 해제 대상을 다시 확인한다.
+              </p>
               <p class="step-line">3. `할당 해제`를 눌러 확정한다.</p>
-              <p class="step-line">4. 장치 사용자 정보가 비워졌는지 확인한다.</p>
-              <p class="bullet-line">해당 기기에 할당 해제 결재가 진행 중이면 해제할 수 없으며, 연결 삭제 예정일이 도달하면 장치와 함께 할당 정보도 자동 삭제될 수 있다.</p>
+              <p class="step-line">
+                4. 장치 사용자 정보가 비워졌는지 확인한다.
+              </p>
+              <p class="bullet-line">
+                해당 기기에 할당 해제 결재가 진행 중이면 해제할 수 없으며, 연결
+                삭제 예정일이 도달하면 장치와 함께 할당 정보도 자동 삭제될 수
+                있다.
+              </p>
               <div class="table-wrap">
                 <table class="doc-table screenshot-table">
                   <thead>
@@ -747,18 +1242,31 @@
                   <tbody>
                     <tr>
                       <td>장치 할당 해제 확인</td>
-                      <td><img class="manual-screenshot" src="../assets/images/manuals/user/network/user-device-unassign-confirm.png" alt="장치 할당 해제 확인" loading="lazy" /></td>
+                      <td>
+                        <img
+                          class="manual-screenshot"
+                          src="../assets/images/manuals/user/network/user-device-unassign-confirm.png"
+                          alt="장치 할당 해제 확인"
+                          loading="lazy"
+                        />
+                      </td>
                     </tr>
                   </tbody>
                 </table>
               </div>
             </article>
             <article class="manual-article">
-              <h3>5.2.11 내 장치 별칭 수정</h3>
-              <p class="bullet-line">본인에게 할당된 장치의 액션 메뉴에서 `별칭 수정`을 실행한다.</p>
-              <p class="step-line">1. 본인에게 할당된 장치의 액션 메뉴에서 `별칭 수정`을 클릭한다.</p>
+              <h3>4.2.11 내 장치 별칭 수정</h3>
+              <p class="bullet-line">
+                본인에게 할당된 장치의 액션 메뉴에서 `별칭 수정`을 실행한다.
+              </p>
+              <p class="step-line">
+                1. 본인에게 할당된 장치의 액션 메뉴에서 `별칭 수정`을 클릭한다.
+              </p>
               <p class="step-line">2. 새 별칭을 입력한다.</p>
-              <p class="step-line">3. 저장 후 장치명 표시가 바뀌었는지 확인한다.</p>
+              <p class="step-line">
+                3. 저장 후 장치명 표시가 바뀌었는지 확인한다.
+              </p>
               <div class="table-wrap">
                 <table class="doc-table screenshot-table">
                   <thead>
@@ -770,19 +1278,30 @@
                   <tbody>
                     <tr>
                       <td>별칭 수정 화면</td>
-                      <td><img class="manual-screenshot" src="../assets/images/manuals/user/network/user-device-alias-edit.png" alt="별칭 수정 화면" loading="lazy" /></td>
+                      <td>
+                        <img
+                          class="manual-screenshot"
+                          src="../assets/images/manuals/user/network/user-device-alias-edit.png"
+                          alt="별칭 수정 화면"
+                          loading="lazy"
+                        />
+                      </td>
                     </tr>
                   </tbody>
                 </table>
               </div>
             </article>
           </section>
-          <section class="manual-section" id="5-3-멤버">
-            <h2>5.3 멤버</h2>
-            <p class="label-row"><span>▶</span><strong>메뉴 위치:</strong> 상단 메뉴 &gt; 멤버</p>
+          <section class="manual-section" id="4-3-멤버">
+            <h2>4.3 멤버</h2>
+            <p class="label-row">
+              <span>▶</span><strong>메뉴 위치:</strong> 상단 메뉴 &gt; 멤버
+            </p>
             <p class="label-row"><span>▶</span><strong>기능 설명:</strong></p>
             <p class="bullet-line">조직 트리 기준으로 멤버를 조회한다.</p>
-            <p class="bullet-line">이름, 아이디, 연락처, 이메일 기준 검색이 가능하다.</p>
+            <p class="bullet-line">
+              이름, 아이디, 연락처, 이메일 기준 검색이 가능하다.
+            </p>
             <p class="label-row"><span>▶</span><strong>사용 절차:</strong></p>
             <p class="step-line">1. 멤버 메뉴를 선택한다.</p>
             <p class="step-line">2. 좌측 조직 트리에서 부서를 선택한다.</p>
@@ -812,7 +1331,9 @@
                 </tbody>
               </table>
             </div>
-            <p class="label-row"><span>▶</span><strong>화면 내 주요 버튼:</strong></p>
+            <p class="label-row">
+              <span>▶</span><strong>화면 내 주요 버튼:</strong>
+            </p>
             <div class="table-wrap">
               <table class="doc-table">
                 <thead>
@@ -829,10 +1350,19 @@
                 </tbody>
               </table>
             </div>
-            <p class="label-row"><span>▶</span><strong>처리 결과 / 유의사항:</strong></p>
-            <p class="bullet-line">선택한 부서의 하위 부서 구성원까지 함께 조회된다.</p>
-            <p class="bullet-line">멤버 초대 대상을 찾을 때는 부서 트리와 검색 조건을 함께 사용하는 것이 효율적이다.</p>
-            <p class="bullet-line">네트워크에 초대할 대상을 찾을 때 가장 먼저 확인하면 좋다.</p>
+            <p class="label-row">
+              <span>▶</span><strong>처리 결과 / 유의사항:</strong>
+            </p>
+            <p class="bullet-line">
+              선택한 부서의 하위 부서 구성원까지 함께 조회된다.
+            </p>
+            <p class="bullet-line">
+              멤버 초대 대상을 찾을 때는 부서 트리와 검색 조건을 함께 사용하는
+              것이 효율적이다.
+            </p>
+            <p class="bullet-line">
+              네트워크에 초대할 대상을 찾을 때 가장 먼저 확인하면 좋다.
+            </p>
             <p class="label-row"><span>▶</span><strong>스크린샷:</strong></p>
             <div class="table-wrap">
               <table class="doc-table screenshot-table">
@@ -845,40 +1375,85 @@
                 <tbody>
                   <tr>
                     <td>멤버 화면</td>
-                    <td><img class="manual-screenshot" src="../assets/images/manuals/user/member/5-3-멤버.png" alt="멤버 화면" loading="lazy" /></td>
+                    <td>
+                      <img
+                        class="manual-screenshot"
+                        src="../assets/images/manuals/user/member/5-3-멤버.png"
+                        alt="멤버 화면"
+                        loading="lazy"
+                      />
+                    </td>
                   </tr>
                 </tbody>
               </table>
             </div>
           </section>
-          <section class="manual-section" id="5-4-요청">
-            <h2>5.4 요청</h2>
-            <p class="label-row"><span>▶</span><strong>메뉴 위치:</strong> 상단 메뉴 &gt; 요청</p>
+          <section class="manual-section" id="4-4-요청">
+            <h2>4.4 요청</h2>
+            <p class="label-row">
+              <span>▶</span><strong>메뉴 위치:</strong> 상단 메뉴 &gt; 요청
+            </p>
             <p class="label-row"><span>▶</span><strong>기능 설명:</strong></p>
             <p class="bullet-line">받은 요청과 보낸 요청을 분리해 조회한다.</p>
-            <p class="bullet-line">상태별로 전체, 대기, 승인, 반려 요청을 확인한다.</p>
-            <p class="bullet-line">받은 요청 중 승인 권한이 있는 경우 처리 기능이 제공될 수 있다.</p>
-            <p class="bullet-line">같은 요청을 다시 보내기 전에 현재 상태를 먼저 확인하는 화면이다.</p>
+            <p class="bullet-line">
+              상태별로 전체, 대기, 승인, 반려 요청을 확인한다.
+            </p>
+            <p class="bullet-line">
+              받은 요청 중 승인 권한이 있는 경우 처리 기능이 제공될 수 있다.
+            </p>
+            <p class="bullet-line">
+              같은 요청을 다시 보내기 전에 현재 상태를 먼저 확인하는 화면이다.
+            </p>
             <p class="label-row"><span>▶</span><strong>사용 절차:</strong></p>
             <p class="step-line">1. 요청 메뉴를 선택한다.</p>
-            <p class="step-line">2. `받은 요청` 또는 `보낸 요청` 탭을 선택한다.</p>
+            <p class="step-line">
+              2. `받은 요청` 또는 `보낸 요청` 탭을 선택한다.
+            </p>
             <p class="step-line">3. 상태 필터를 선택한다.</p>
             <p class="step-line">4. 요청 카드를 확인한다.</p>
-            <p class="step-line">5. 권한이 있는 경우 요청을 승인 또는 반려한다.</p>
-            <p class="label-row"><span>▶</span><strong>처리 결과 / 유의사항:</strong></p>
-            <p class="bullet-line">승인/반려 기능은 결재 권한이 있는 사용자에게만 적용될 수 있다.</p>
+            <p class="step-line">
+              5. 권한이 있는 경우 요청을 승인 또는 반려한다.
+            </p>
+            <p class="label-row">
+              <span>▶</span><strong>처리 결과 / 유의사항:</strong>
+            </p>
+            <p class="bullet-line">
+              승인/반려 기능은 결재 권한이 있는 사용자에게만 적용될 수 있다.
+            </p>
             <p class="bullet-line">실시간 이벤트 수신 시 목록이 갱신된다.</p>
-            <p class="bullet-line">`받은 요청` 탭에서는 대기 요청을 처리하고 `보낸 요청` 탭에서는 현재 승인 상태를 확인한다.</p>
-            <p class="bullet-line">반려된 요청은 반려 사유를 확인한 뒤 내용을 수정해 다시 요청해야 한다.</p>
-            <p class="bullet-line">`검토 중` 상태에서 다시 같은 요청을 보내면 중복 작업이 되므로 먼저 기존 요청의 진행 상태를 확인한다.</p>
-            <p class="bullet-line">상태 배지와 하단 안내 문구를 함께 읽으면 승인 완료, 검토 중, 반려 사유를 빠르게 구분할 수 있다.</p>
+            <p class="bullet-line">
+              `받은 요청` 탭에서는 대기 요청을 처리하고 `보낸 요청` 탭에서는
+              현재 승인 상태를 확인한다.
+            </p>
+            <p class="bullet-line">
+              반려된 요청은 반려 사유를 확인한 뒤 내용을 수정해 다시 요청해야
+              한다.
+            </p>
+            <p class="bullet-line">
+              `검토 중` 상태에서 다시 같은 요청을 보내면 중복 작업이 되므로 먼저
+              기존 요청의 진행 상태를 확인한다.
+            </p>
+            <p class="bullet-line">
+              상태 배지와 하단 안내 문구를 함께 읽으면 승인 완료, 검토 중, 반려
+              사유를 빠르게 구분할 수 있다.
+            </p>
             <article class="manual-article">
-              <h3>5.4.1 요청 조회</h3>
-              <p class="bullet-line">`받은 요청`과 `보낸 요청` 탭을 나눠 현재 처리 대상과 내가 올린 요청 상태를 확인한다.</p>
+              <h3>4.4.1 요청 조회</h3>
+              <p class="bullet-line">
+                `받은 요청`과 `보낸 요청` 탭을 나눠 현재 처리 대상과 내가 올린
+                요청 상태를 확인한다.
+              </p>
               <p class="step-line">1. 요청 메뉴를 선택한다.</p>
-              <p class="step-line">2. `받은 요청` 또는 `보낸 요청` 탭을 선택한다.</p>
-              <p class="step-line">3. `전체`, `대기`, `승인`, `반려` 상태 필터를 적용한다.</p>
-              <p class="step-line">4. 상태 배지, 요청 종류, 자원 종류, 하단 안내 영역을 함께 읽는다.</p>
+              <p class="step-line">
+                2. `받은 요청` 또는 `보낸 요청` 탭을 선택한다.
+              </p>
+              <p class="step-line">
+                3. `전체`, `대기`, `승인`, `반려` 상태 필터를 적용한다.
+              </p>
+              <p class="step-line">
+                4. 상태 배지, 요청 종류, 자원 종류, 하단 안내 영역을 함께
+                읽는다.
+              </p>
               <div class="table-wrap">
                 <table class="doc-table screenshot-table">
                   <thead>
@@ -890,22 +1465,42 @@
                   <tbody>
                     <tr>
                       <td>받은 요청 화면</td>
-                      <td><img class="manual-screenshot" src="../assets/images/manuals/user/request/user-request-received.png" alt="받은 요청 화면" loading="lazy" /></td>
+                      <td>
+                        <img
+                          class="manual-screenshot"
+                          src="../assets/images/manuals/user/request/user-request-received.png"
+                          alt="받은 요청 화면"
+                          loading="lazy"
+                        />
+                      </td>
                     </tr>
                     <tr>
                       <td>보낸 요청 화면</td>
-                      <td><img class="manual-screenshot" src="../assets/images/manuals/user/request/user-request-sent.png" alt="보낸 요청 화면" loading="lazy" /></td>
+                      <td>
+                        <img
+                          class="manual-screenshot"
+                          src="../assets/images/manuals/user/request/user-request-sent.png"
+                          alt="보낸 요청 화면"
+                          loading="lazy"
+                        />
+                      </td>
                     </tr>
                   </tbody>
                 </table>
               </div>
             </article>
             <article class="manual-article">
-              <h3>5.4.2 받은 요청 승인</h3>
-              <p class="bullet-line">대기 상태의 받은 요청을 승인해 요청을 완료한다.</p>
-              <p class="step-line">1. `받은 요청` 탭에서 대기 상태 요청을 선택한다.</p>
+              <h3>4.4.2 받은 요청 승인</h3>
+              <p class="bullet-line">
+                대기 상태의 받은 요청을 승인해 요청을 완료한다.
+              </p>
+              <p class="step-line">
+                1. `받은 요청` 탭에서 대기 상태 요청을 선택한다.
+              </p>
               <p class="step-line">2. 카드 하단의 `승인` 버튼을 클릭한다.</p>
-              <p class="step-line">3. 확인 팝업에서 승인 여부를 다시 확인한다.</p>
+              <p class="step-line">
+                3. 확인 팝업에서 승인 여부를 다시 확인한다.
+              </p>
               <p class="step-line">4. 처리 후 상태가 바뀌었는지 확인한다.</p>
               <div class="table-wrap">
                 <table class="doc-table screenshot-table">
@@ -918,19 +1513,30 @@
                   <tbody>
                     <tr>
                       <td>받은 요청 승인 화면</td>
-                      <td><img class="manual-screenshot" src="../assets/images/manuals/user/request/user-request-approve.png" alt="받은 요청 승인 화면" loading="lazy" /></td>
+                      <td>
+                        <img
+                          class="manual-screenshot"
+                          src="../assets/images/manuals/user/request/user-request-approve.png"
+                          alt="받은 요청 승인 화면"
+                          loading="lazy"
+                        />
+                      </td>
                     </tr>
                   </tbody>
                 </table>
               </div>
             </article>
             <article class="manual-article">
-              <h3>5.4.3 받은 요청 반려</h3>
+              <h3>4.4.3 받은 요청 반려</h3>
               <p class="bullet-line">반려 사유를 입력해 요청을 거절한다.</p>
-              <p class="step-line">1. `받은 요청` 탭에서 대기 상태 요청을 선택한다.</p>
+              <p class="step-line">
+                1. `받은 요청` 탭에서 대기 상태 요청을 선택한다.
+              </p>
               <p class="step-line">2. 카드 하단의 `반려` 버튼을 클릭한다.</p>
               <p class="step-line">3. 반려 사유를 입력한다.</p>
-              <p class="step-line">4. 처리 후 요청 결과와 반려 사유를 다시 확인한다.</p>
+              <p class="step-line">
+                4. 처리 후 요청 결과와 반려 사유를 다시 확인한다.
+              </p>
               <div class="table-wrap">
                 <table class="doc-table screenshot-table">
                   <thead>
@@ -942,23 +1548,41 @@
                   <tbody>
                     <tr>
                       <td>받은 요청 반려 화면</td>
-                      <td><img class="manual-screenshot" src="../assets/images/manuals/user/request/user-request-reject.png" alt="받은 요청 반려 화면" loading="lazy" /></td>
+                      <td>
+                        <img
+                          class="manual-screenshot"
+                          src="../assets/images/manuals/user/request/user-request-reject.png"
+                          alt="받은 요청 반려 화면"
+                          loading="lazy"
+                        />
+                      </td>
                     </tr>
                   </tbody>
                 </table>
               </div>
             </article>
           </section>
-          <section class="manual-section" id="5-5-설정">
-            <h2>5.5 설정</h2>
-            <p class="label-row"><span>▶</span><strong>메뉴 위치:</strong> 상단 메뉴 &gt; 설정</p>
+          <section class="manual-section" id="4-5-설정">
+            <h2>4.5 설정</h2>
+            <p class="label-row">
+              <span>▶</span><strong>메뉴 위치:</strong> 상단 메뉴 &gt; 설정
+            </p>
             <p class="label-row"><span>▶</span><strong>기능 설명:</strong></p>
-            <p class="bullet-line">프로필 수정, 비밀번호 변경, 계정 삭제를 수행한다.</p>
-            <p class="bullet-line">개인 정보와 접속 보안을 정리하는 마지막 점검 화면으로 이해하면 된다.</p>
+            <p class="bullet-line">
+              프로필 수정, 비밀번호 변경, 계정 삭제를 수행한다.
+            </p>
+            <p class="bullet-line">
+              개인 정보와 접속 보안을 정리하는 마지막 점검 화면으로 이해하면
+              된다.
+            </p>
             <p class="label-row"><span>▶</span><strong>사용 절차:</strong></p>
             <p class="step-line">1. 설정 메뉴를 선택한다.</p>
-            <p class="step-line">2. 프로필 탭에서 이름, 연락처, 이메일을 수정한다.</p>
-            <p class="step-line">3. 보안 탭에서 현재 비밀번호와 새 비밀번호를 입력한다.</p>
+            <p class="step-line">
+              2. 프로필 탭에서 이름, 연락처, 이메일을 수정한다.
+            </p>
+            <p class="step-line">
+              3. 보안 탭에서 현재 비밀번호와 새 비밀번호를 입력한다.
+            </p>
             <p class="step-line">4. 계정 삭제 탭에서 삭제 여부를 확인한다.</p>
             <p class="label-row"><span>▶</span><strong>입력 항목:</strong></p>
             <div class="table-wrap">
@@ -1004,7 +1628,9 @@
                 </tbody>
               </table>
             </div>
-            <p class="label-row"><span>▶</span><strong>화면 내 주요 버튼:</strong></p>
+            <p class="label-row">
+              <span>▶</span><strong>화면 내 주요 버튼:</strong>
+            </p>
             <div class="table-wrap">
               <table class="doc-table">
                 <thead>
@@ -1029,12 +1655,26 @@
                 </tbody>
               </table>
             </div>
-            <p class="label-row"><span>▶</span><strong>처리 결과 / 유의사항:</strong></p>
-            <p class="bullet-line">비밀번호는 영문, 숫자, 특수문자 포함 8~16자 검증이 적용된다.</p>
-            <p class="bullet-line">계정 삭제는 되돌릴 수 없는 작업으로 확인된다.</p>
-            <p class="bullet-line">설정 화면은 프로필, 보안, 계정 삭제 탭으로 구성된다.</p>
-            <p class="bullet-line">현재 비밀번호가 맞지 않거나 형식 기준을 만족하지 못하면 비밀번호가 저장되지 않는다.</p>
-            <p class="bullet-line">프로필 변경 후에는 저장 완료 메시지와 최신 연락처 반영 여부를 함께 확인한다.</p>
+            <p class="label-row">
+              <span>▶</span><strong>처리 결과 / 유의사항:</strong>
+            </p>
+            <p class="bullet-line">
+              비밀번호는 영문, 숫자, 특수문자 포함 8~16자 검증이 적용된다.
+            </p>
+            <p class="bullet-line">
+              계정 삭제는 되돌릴 수 없는 작업으로 확인된다.
+            </p>
+            <p class="bullet-line">
+              설정 화면은 프로필, 보안, 계정 삭제 탭으로 구성된다.
+            </p>
+            <p class="bullet-line">
+              현재 비밀번호가 맞지 않거나 형식 기준을 만족하지 못하면 비밀번호가
+              저장되지 않는다.
+            </p>
+            <p class="bullet-line">
+              프로필 변경 후에는 저장 완료 메시지와 최신 연락처 반영 여부를 함께
+              확인한다.
+            </p>
             <p class="label-row"><span>▶</span><strong>스크린샷:</strong></p>
             <div class="table-wrap">
               <table class="doc-table screenshot-table">
@@ -1047,7 +1687,14 @@
                 <tbody>
                   <tr>
                     <td>설정 화면</td>
-                    <td><img class="manual-screenshot" src="../assets/images/manuals/user/settings/5-5-설정.png" alt="설정 화면" loading="lazy" /></td>
+                    <td>
+                      <img
+                        class="manual-screenshot"
+                        src="../assets/images/manuals/user/settings/5-5-설정.png"
+                        alt="설정 화면"
+                        loading="lazy"
+                      />
+                    </td>
                   </tr>
                 </tbody>
               </table>
@@ -1064,58 +1711,569 @@
                 <tbody>
                   <tr>
                     <td>설정 보안 탭</td>
-                    <td><img class="manual-screenshot" src="../assets/images/manuals/user/settings/5-5-설정-보안.png" alt="설정 보안 탭" loading="lazy" /></td>
+                    <td>
+                      <img
+                        class="manual-screenshot"
+                        src="../assets/images/manuals/user/settings/5-5-설정-보안.png"
+                        alt="설정 보안 탭"
+                        loading="lazy"
+                      />
+                    </td>
                   </tr>
                   <tr>
                     <td>설정 계정 삭제 탭</td>
-                    <td><img class="manual-screenshot" src="../assets/images/manuals/user/settings/5-5-설정-계정-삭제.png" alt="설정 계정 삭제 탭" loading="lazy" /></td>
+                    <td>
+                      <img
+                        class="manual-screenshot"
+                        src="../assets/images/manuals/user/settings/5-5-설정-계정-삭제.png"
+                        alt="설정 계정 삭제 탭"
+                        loading="lazy"
+                      />
+                    </td>
                   </tr>
                   <tr>
                     <td>계정 삭제 확인 팝업</td>
-                    <td><img class="manual-screenshot" src="../assets/images/manuals/user/settings/5-5-계정-삭제-확인.png" alt="계정 삭제 확인 팝업" loading="lazy" /></td>
+                    <td>
+                      <img
+                        class="manual-screenshot"
+                        src="../assets/images/manuals/user/settings/5-5-계정-삭제-확인.png"
+                        alt="계정 삭제 확인 팝업"
+                        loading="lazy"
+                      />
+                    </td>
                   </tr>
                 </tbody>
               </table>
             </div>
+          </section>
+          <section class="manual-section" id="5-클라이언트-설치-및-사용">
+            <h2>5. 클라이언트 설치 및 사용</h2>
+            <p class="label-row"><span>▶</span><strong>기능 설명:</strong></p>
+            <p class="bullet-line">
+              홈 화면에서 설치 파일을 내려받은 뒤 운영체제에 맞는 방식으로
+              IDNClient를 설치하고 로그인해 연결을 시작한다.
+            </p>
+            <p class="bullet-line">
+              이 섹션은 클라이언트 설치, 로그인, 연결, 연결 해제, 상태 확인,
+              부가 기능까지 실제 사용 순서에 맞춰 정리한다.
+            </p>
+            <article class="manual-article" id="5-1-idnclient-설치-및-사용">
+              <h3>5.1 OS별 설치 방법</h3>
+              <p class="bullet-line">
+                <code>IDNClient</code> 설치는 운영체제별 파일 형식과 권한 안내가
+                다르므로 본인 환경에 맞는 절차를 따라 진행한다.
+              </p>
+              <article class="manual-article">
+                <h3>5.1.1 Windows 설치</h3>
+                <p class="step-line">
+                  1. 홈 화면에서 내려받은 Windows 설치 프로그램
+                  <code>.exe</code>를 실행한다.
+                </p>
+                <p class="step-line">
+                  2. Windows 보안 또는 UAC 창이 표시되면 내용을 확인한 뒤
+                  허용한다.
+                </p>
+                <p class="step-line">3. 설치 안내에 따라 설치를 완료한다.</p>
+                <p class="step-line">
+                  4. 바탕화면 또는 시작 메뉴에서 <code>IDNClient</code>를
+                  실행한다.
+                </p>
+              </article>
+              <article class="manual-article">
+                <h3>5.1.2 macOS 설치</h3>
+                <p class="step-line">
+                  1. 홈 화면에서 내려받은 <code>IDNClient</code> 설치
+                  이미지(<code>.dmg</code>)를 연다.
+                </p>
+                <p class="step-line">
+                  2. 설치 패키지(<code>.pkg</code>)를 실행한다.
+                </p>
+                <p class="step-line">3. 설치 안내에 따라 설치를 완료한다.</p>
+                <p class="step-line">
+                  4. <code>응용 프로그램</code>에서 <code>IDNClient</code>를
+                  실행한다.
+                </p>
+              </article>
+              <article class="manual-article">
+                <h3>5.1.3 Android 설치</h3>
+                <p class="step-line">
+                  1. 홈 화면에서 내려받은 <code>.apk</code> 파일을 실행한다.
+                </p>
+                <p class="step-line">
+                  2. <code>알 수 없는 앱 설치 허용</code> 안내가 표시되면
+                  허용한다.
+                </p>
+                <p class="step-line">3. 설치 안내에 따라 설치를 완료한다.</p>
+                <p class="step-line">
+                  4. 앱 목록에서 <code>IDNClient</code>를 실행한다.
+                </p>
+              </article>
+              <p class="label-row">
+                <span>▶</span><strong>처리 결과 / 유의사항:</strong>
+              </p>
+              <p class="bullet-line">
+                운영체제별 설치 파일 형식은 Windows <code>.exe</code>, macOS
+                <code>.dmg</code> 또는 <code>.pkg</code>, Android
+                <code>.apk</code>로 구분된다.
+              </p>
+              <p class="bullet-line">
+                Android에서는 알림 권한과 배터리 최적화 예외 허용 안내가 표시될
+                수 있으며, 배터리 최적화 예외를 허용하지 않으면 백그라운드
+                연결이 불안정해질 수 있다.
+              </p>
+            </article>
+            <article class="manual-article" id="5-2-idnclient-로그인">
+              <h3>5.2 IDNClient 로그인</h3>
+              <p class="step-line">
+                1. 로그인 화면에서 사용자 ID와 비밀번호를 입력하고 로그인한다.
+              </p>
+              <p class="step-line">
+                2. 필요 시 <code>아이디와 비밀번호 저장</code> 옵션을 선택한다.
+              </p>
+              <p class="step-line">
+                3. 로그인이 완료되면 메인 화면으로 이동한다.
+              </p>
+              <p class="bullet-line">
+                로그인은 되지만 연결이 안 되면 네트워크 연결 상태, 앱 재실행
+                여부, 현재 설치 파일 적합 여부를 차례로 확인한다.
+              </p>
+              <p class="label-row"><span>▶</span><strong>스크린샷:</strong></p>
+              <div class="table-wrap">
+                <table class="doc-table screenshot-table">
+                  <thead>
+                    <tr>
+                      <th>화면명</th>
+                      <th>이미지</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>IDNClient 로그인 화면</td>
+                      <td>
+                        <img
+                          class="manual-screenshot"
+                          src="../assets/images/manuals/user/client/client-login.png"
+                          alt="IDNClient 로그인 화면"
+                          loading="lazy"
+                        />
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </article>
+            <article class="manual-article" id="5-3-idnclient-메인-화면-구성">
+              <h3>5.3 IDNClient 메인 화면 구성</h3>
+              <p class="bullet-line">
+                <code>IDNClient</code> 로그인 후 메인 화면은 크게 상단 영역과 탭
+                영역으로 나뉜다.
+              </p>
+              <article class="manual-article">
+                <h3>5.3.1 상단</h3>
+                <p class="bullet-line">
+                  <code>사용자 페이지</code>: 현재 세션 기준으로 브라우저에서
+                  사용자 페이지를 연다.
+                </p>
+                <p class="bullet-line">
+                  <code>로그아웃</code>: 현재 세션을 종료하고 로그인 화면으로
+                  돌아간다.
+                </p>
+              </article>
+              <article class="manual-article">
+                <h3>5.3.2 탭</h3>
+                <p class="bullet-line">
+                  <code>내장치</code>: 내가 사용할 수 있는 장치 목록과 연결
+                  상태를 확인한다.
+                </p>
+                <p class="bullet-line">
+                  <code>나와 연결된 장치</code>: 현재 연결된 다른 장치의
+                  online/offline 상태를 확인한다.
+                </p>
+                <p class="bullet-line">
+                  <code>내장치</code> 목록에서는 장치 이름, TNI 주소, VNET 이름
+                  또는 별칭, 연결 상태를 확인할 수 있다.
+                </p>
+                <p class="bullet-line">
+                  행을 펼치면 장치 ID, 컨트롤러 주소 같은 상세 정보를 함께 볼 수
+                  있다.
+                </p>
+              </article>
+              <p class="label-row"><span>▶</span><strong>스크린샷:</strong></p>
+              <div class="table-wrap">
+                <table class="doc-table screenshot-table">
+                  <thead>
+                    <tr>
+                      <th>화면명</th>
+                      <th>이미지</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>IDNClient 메인 화면</td>
+                      <td>
+                        <img
+                          class="manual-screenshot"
+                          src="../assets/images/manuals/user/client/client-main.png"
+                          alt="IDNClient 메인 화면"
+                          loading="lazy"
+                        />
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </article>
+            <article class="manual-article" id="5-4-idnclient-연결">
+              <h3>5.4 IDNClient 연결</h3>
+              <p class="step-line">
+                1. <code>내장치</code> 탭에서 원하는 장치를 찾는다.
+              </p>
+              <p class="step-line">
+                2. 행을 펼쳐 장치 이름, VNET 이름, TNI 주소, 컨트롤러 주소를
+                확인한다.
+              </p>
+              <p class="step-line">3. <code>연결</code> 버튼을 클릭한다.</p>
+              <p class="step-line">
+                4. <code>연결 준비 중입니다.</code>,
+                <code>안전한 보안네트워크로 연결중입니다.</code> 같은 상태
+                문구가 순서대로 표시되는지 확인한다.
+              </p>
+              <p class="step-line">
+                5. 연결 완료 후 <code>나와 연결된 장치</code> 탭에서 상대 장치가
+                온라인 상태로 보이는지 확인한다.
+              </p>
+              <p class="bullet-line">
+                <code>IDNClient</code>는 실제 업무 앱을 대신 실행하는 것이
+                아니라, 내부 시스템까지 연결 경로를 열어주는 역할을 한다.
+              </p>
+              <p class="label-row"><span>▶</span><strong>스크린샷:</strong></p>
+              <div class="table-wrap">
+                <table class="doc-table screenshot-table">
+                  <thead>
+                    <tr>
+                      <th>화면명</th>
+                      <th>이미지</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>IDNClient 연결 상태 화면</td>
+                      <td>
+                        <img
+                          class="manual-screenshot"
+                          src="../assets/images/manuals/user/client/client-connect.png"
+                          alt="IDNClient 연결 상태 화면"
+                          loading="lazy"
+                        />
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </article>
+            <article class="manual-article" id="5-5-idnclient-연결-해제">
+              <h3>5.5 IDNClient 연결 해제</h3>
+              <p class="step-line">1. 현재 연결된 장치 행을 펼친다.</p>
+              <p class="step-line">
+                2. <code>연결 해제</code> 버튼을 클릭한다.
+              </p>
+              <p class="step-line">
+                3. 연결 종료 상태 문구가 표시되는지 확인한다.
+              </p>
+              <p class="step-line">
+                4. 웹에서 해당 장치 상태가 오프라인으로 바뀌는지 확인한다.
+              </p>
+              <p class="bullet-line">
+                테스트 중 <code>연결</code>과 <code>연결 해제</code>를 빠르게
+                반복하면 상태가 흔들릴 수 있으므로 상태 문구가 바뀐 뒤 다음
+                동작을 진행한다.
+              </p>
+            </article>
+            <article class="manual-article" id="5-6-idnclient-이름-변경">
+              <h3>5.6 IDNClient 이름 변경</h3>
+              <p class="label-row">
+                <span>▶</span><strong>장치 이름 변경:</strong>
+              </p>
+              <p class="step-line">
+                1. <code>내장치</code>에서 대상 장치 행을 펼친다.
+              </p>
+              <p class="step-line">2. 이름 변경 기능을 선택한다.</p>
+              <p class="step-line">3. 새 장치 이름을 입력하고 저장한다.</p>
+              <p class="step-line">
+                4. 변경한 단말과 같은 계정의 다른 단말에도 최신 이름이
+                반영되는지 확인한다.
+              </p>
+              <p class="label-row">
+                <span>▶</span><strong>VNET 별칭 변경:</strong>
+              </p>
+              <p class="step-line">
+                1. <code>내장치</code>에서 대상 장치 행을 펼친다.
+              </p>
+              <p class="step-line">
+                2. <code>VNET 별칭</code> 변경 기능을 선택한다.
+              </p>
+              <p class="step-line">3. 새 이름을 입력하고 저장한다.</p>
+              <p class="step-line">4. 목록과 다른 단말 반영 여부를 확인한다.</p>
+              <p class="bullet-line">
+                <code>VNET</code> 이름 변경은 권한이 있는 계정만 가능하다.
+              </p>
+              <p class="label-row"><span>▶</span><strong>스크린샷:</strong></p>
+              <div class="table-wrap">
+                <table class="doc-table screenshot-table">
+                  <thead>
+                    <tr>
+                      <th>화면명</th>
+                      <th>이미지</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+              <tr>
+                <td>장치 이름 변경 화면</td>
+                <td>
+                  <img src="../assets/images/manuals/user/client/client-device-alias.png" alt="IDNClient 장치 이름 변경 화면" />
+                </td>
+              </tr>
+              <tr>
+                <td>VNET 별칭 변경 화면</td>
+                <td>
+                  <img src="../assets/images/manuals/user/client/client-vnet-alias.png" alt="IDNClient VNET 별칭 변경 화면" />
+                </td>
+              </tr>
+                  </tbody>
+                </table>
+              </div>
+            </article>
+            <article
+              class="manual-article"
+              id="5-7-idnclient-사용자-페이지-로그아웃-업데이트"
+            >
+              <h3>5.7 사용자 페이지, 로그아웃, 업데이트</h3>
+              <article class="manual-article" id="5-7-1-사용자-페이지-및-로그아웃">
+                <h3>5.7.1 사용자 페이지 및 로그아웃</h3>
+                <p class="bullet-line">
+                  사용자 페이지: 상단의 <code>사용자 페이지</code> 버튼을
+                  클릭한다. 현재 로그인된 계정 정보가 브라우저(<code>Chrome</code>,
+                  <code>Edge</code> 등)를 통해 새 창으로 열린다.
+                </p>
+                <p class="bullet-line">
+                  로그아웃: 상단의 <code>로그아웃</code> 버튼을 클릭한다. 접속
+                  중인 계정이 종료되며 초기 로그인 화면으로 돌아간다.
+                </p>
+              </article>
+              <article class="manual-article" id="5-7-2-프로그램-업데이트">
+                <h3>5.7.2 프로그램 업데이트</h3>
+                <p class="bullet-line">
+                  업데이트 확인: Windows/macOS는 프로그램을 실행할 때 최신
+                  버전이 있는지 자동으로 확인한다.
+                </p>
+                <p class="bullet-line">
+                  Android: 앱 실행 중 업데이트 안내 팝업이 표시될 수 있다.
+                </p>
+                <p class="bullet-line">
+                  설치 파일 확인: 업데이트 시, 본인이 사용하는 기기(<code>Windows</code>,
+                  <code>macOS</code>, <code>Android</code> 등)에 맞는 설치
+                  파일인지 다시 한번 확인한 뒤 진행한다.
+                </p>
+              </article>
+            </article>
+            <article class="manual-article" id="5-8-idnclient-사용-예시">
+              <h3>5.8 대표 사용 예시</h3>
+              <p class="bullet-line">
+                <code>IDNClient</code>는 안전한 보안 통로를 만드는 역할을 한다.
+                연결이 완료되면 평소 사용하던 외부 응용 프로그램을 통해 내부 자원에
+                안전하게 접근할 수 있다.
+              </p>
+              <article class="manual-article" id="5-8-1-일반-사용자용-주요-예시">
+                <h3>5.8.1 일반 사용자용 주요 예시</h3>
+                <p class="bullet-line">
+                  일반적인 사무 환경에서 가장 자주 쓰이는 기능들이다.
+                </p>
+                <p class="label-row"><span>▶</span><strong>원격 PC 제어(RDP)</strong></p>
+                <p class="bullet-line">
+                  상황: 내 PC에서 사무실에 있는 Windows PC 화면에 접속해야 할 때
+                </p>
+                <p class="bullet-line">
+                  방법: <code>IDNClient</code>에서 대상 네트워크에 연결한다.
+                  이후 <code>원격 데스크톱 연결(mstsc)</code> 또는
+                  <code>Microsoft Remote Desktop</code> 앱을 실행하고, 접속할
+                  원격 PC의 내부 주소(예: <code>10.x.x.x</code>)를 입력한 뒤
+                  로그인한다.
+                </p>
+                <p class="label-row"><span>▶</span><strong>내부 웹 시스템 접속</strong></p>
+                <p class="bullet-line">
+                  상황: 사내 게시판, 그룹웨어, 관리자 페이지에 접속해야 할 때
+                </p>
+                <p class="bullet-line">
+                  방법: <code>IDNClient</code> 연결 후 브라우저(<code>Chrome</code>,
+                  <code>Edge</code> 등)를 실행한다. 주소창에 내부 웹 주소나 IP를
+                  입력하여 접속한다. 예: <code>http://192.168.0.10</code>
+                </p>
+                <p class="label-row"><span>▶</span><strong>파일 공유 및 NAS 접근</strong></p>
+                <p class="bullet-line">
+                  상황: 회사 내 공유 폴더나 NAS에 파일을 올리거나 내려받을 때
+                </p>
+                <p class="bullet-line">
+                  방법: <code>IDNClient</code>를 연결한 뒤 파일 탐색기 주소창에
+                  공유 경로를 입력한다. Windows:
+                  <code>\\\\10.0.0.20\\share</code>, macOS:
+                  <code>smb://10.0.0.20/share</code>
+                </p>
+              </article>
+              <article class="manual-article" id="5-8-2-운영-및-개발자용-고급-예시">
+                <h3>5.8.2 운영 및 개발자용 고급 예시</h3>
+                <p class="bullet-line">
+                  기술적 관리가 필요한 운영자나 개발 환경을 위한 활용 방법이다.
+                </p>
+                <p class="label-row"><span>▶</span><strong>서버 원격 접속(SSH/SFTP)</strong></p>
+                <p class="bullet-line">
+                  상황: 리눅스 서버 터미널 접속이나 파일 전송이 필요할 때
+                </p>
+                <p class="bullet-line">
+                  방법: <code>IDNClient</code> 연결 후 터미널(<code>PowerShell</code>,
+                  <code>iTerm2</code> 등)이나 FTP 클라이언트(<code>FileZilla</code>,
+                  <code>WinSCP</code>)를 실행한다. 서버 내부 주소로 접속하여
+                  업무를 수행한다.
+                </p>
+                <p class="label-row"><span>▶</span><strong>데이터베이스(DB) 직접 연결</strong></p>
+                <p class="bullet-line">
+                  상황: <code>DBeaver</code>, <code>HeidiSQL</code> 등의 툴로 내부
+                  DB 서버에 접속할 때
+                </p>
+                <p class="bullet-line">
+                  방법: <code>IDNClient</code>를 먼저 연결한 뒤 DB 관리 도구에서
+                  대상 서버의 내부 IP와 포트를 설정하여 접속한다.
+                </p>
+                <p class="label-row"><span>▶</span><strong>원격 개발 환경(VS Code Remote)</strong></p>
+                <p class="bullet-line">
+                  상황: <code>Visual Studio Code</code>의 <code>Remote - SSH</code>
+                  기능을 사용하여 원격 서버에서 직접 개발할 때
+                </p>
+                <p class="bullet-line">
+                  방법: <code>IDNClient</code> 연결 후 <code>Visual Studio Code</code>를
+                  실행한다. SSH 확장을 통해 내부 서버(예:
+                  <code>dev@10.0.0.40</code>)에 연결한다.
+                </p>
+              </article>
+              <article class="manual-article" id="5-8-3-효율적인-운영을-위한-관리-팁">
+                <h3>5.8.3 효율적인 운영을 위한 관리 팁</h3>
+                <p class="label-row"><span>▶</span><strong>장치 이름 체계화</strong></p>
+                <p class="bullet-line">
+                  단말기가 많아질 경우, 사람 이름보다는
+                  <code>[위치-용도-부서]</code> 형태의 이름을 권장한다.
+                </p>
+                <p class="bullet-line">
+                  예시: <code>서울본사-PC-홍길동</code>,
+                  <code>대전지사-NAS-관리용</code>
+                </p>
+                <p class="label-row"><span>▶</span><strong>장애 시 자가 진단</strong></p>
+                <p class="bullet-line">
+                  연결이 안 될 경우, 다음 순서로 원인을 분리하여 확인한다.
+                </p>
+                <p class="bullet-line">
+                  <code>IDNClient</code> 연결 상태: 앱에서 <code>Online</code> 상태인지
+                  먼저 확인한다.
+                </p>
+                <p class="bullet-line">
+                  대상 서비스 상태: <code>IDNClient</code>는 정상인데 접속이 안
+                  된다면, 접속하려는 대상 장비(PC, 서버)의 전원이 켜져 있는지
+                  확인한다.
+                </p>
+                <p class="bullet-line">
+                  권한 확인: 네트워크 통로는 열려 있어도 해당 시스템(DB, 파일
+                  서버 등)의 로그인 권한이 없는지 확인한다.
+                </p>
+              </article>
+            </article>
           </section>
           <section class="manual-section" id="6-일일-사용-체크리스트">
             <h2>6. 일일 사용 체크리스트</h2>
             <article class="manual-article compact">
               <h3>6.1 매일 확인</h3>
               <p class="bullet-line">홈 알림과 최근 요청이 있는지 본다.</p>
-              <p class="bullet-line">참여 중인 네트워크 수와 장치 온라인/오프라인 상태를 확인한다.</p>
-              <p class="bullet-line">요청 화면에서 대기 또는 검토 중 상태가 남아 있는지 확인한다.</p>
+              <p class="bullet-line">
+                참여 중인 네트워크 수와 장치 온라인/오프라인 상태를 확인한다.
+              </p>
+              <p class="bullet-line">
+                요청 화면에서 대기 또는 검토 중 상태가 남아 있는지 확인한다.
+              </p>
             </article>
             <article class="manual-article compact">
               <h3>6.2 작업 전 확인</h3>
-              <p class="bullet-line">초대할 사용자와 작업할 네트워크가 맞는지 먼저 확인한다.</p>
-              <p class="bullet-line">같은 요청을 이미 보낸 적이 없는지 `보낸 요청` 탭을 먼저 확인한다.</p>
-              <p class="bullet-line">연락처와 이메일 등 개인 정보가 최신 상태인지 확인한다.</p>
+              <p class="bullet-line">
+                초대할 사용자와 작업할 네트워크가 맞는지 먼저 확인한다.
+              </p>
+              <p class="bullet-line">
+                같은 요청을 이미 보낸 적이 없는지 `보낸 요청` 탭을 먼저
+                확인한다.
+              </p>
+              <p class="bullet-line">
+                연락처와 이메일 등 개인 정보가 최신 상태인지 확인한다.
+              </p>
             </article>
             <article class="manual-article compact">
               <h3>6.3 작업 후 확인</h3>
-              <p class="bullet-line">네트워크 목록 또는 상세 화면에 변경 내용이 반영됐는지 확인한다.</p>
-              <p class="bullet-line">장치 상태가 기대한 값으로 보이는지 확인한다.</p>
-              <p class="bullet-line">요청 상태와 설정 저장 완료 메시지를 다시 확인한다.</p>
+              <p class="bullet-line">
+                네트워크 목록 또는 상세 화면에 변경 내용이 반영됐는지 확인한다.
+              </p>
+              <p class="bullet-line">
+                장치 상태가 기대한 값으로 보이는지 확인한다.
+              </p>
+              <p class="bullet-line">
+                요청 상태와 설정 저장 완료 메시지를 다시 확인한다.
+              </p>
             </article>
           </section>
           <section class="manual-section" id="7-자주-하는-실수와-대응">
             <h2>7. 자주 하는 실수와 대응</h2>
             <article class="manual-article compact">
               <h3>7.1 요청이 처리되지 않았는데 다시 같은 요청을 보내는 경우</h3>
-              <p class="bullet-line">먼저 `보낸 요청` 탭에서 현재 상태가 `검토 중`인지, 이미 `반려`됐는지 확인한다.</p>
+              <p class="bullet-line">
+                먼저 `보낸 요청` 탭에서 현재 상태가 `검토 중`인지, 이미
+                `반려`됐는지 확인한다.
+              </p>
             </article>
             <article class="manual-article compact">
-              <h3>7.2 장치가 오프라인인데 네트워크 생성 문제로 오해하는 경우</h3>
-              <p class="bullet-line">홈과 네트워크 상세 화면에서 같은 장치 상태를 다시 확인하고, 실제 단말 연결 상태도 함께 점검한다.</p>
+              <h3>
+                7.2 장치가 오프라인인데 네트워크 생성 문제로 오해하는 경우
+              </h3>
+              <p class="bullet-line">
+                홈과 네트워크 상세 화면에서 같은 장치 상태를 다시 확인하고, 실제
+                단말 연결 상태도 함께 점검한다.
+              </p>
             </article>
             <article class="manual-article compact">
               <h3>7.3 비밀번호가 저장되지 않는 경우</h3>
-              <p class="bullet-line">현재 비밀번호 입력 여부, 새 비밀번호 형식, 새 비밀번호 확인 값 일치를 순서대로 확인한다.</p>
+              <p class="bullet-line">
+                현재 비밀번호 입력 여부, 새 비밀번호 형식, 새 비밀번호 확인 값
+                일치를 순서대로 확인한다.
+              </p>
             </article>
             <article class="manual-article compact">
               <h3>7.4 반려 사유를 읽지 않고 다시 요청하는 경우</h3>
-              <p class="bullet-line">반려 사유를 먼저 읽고 내용을 수정한 뒤 다시 요청해야 같은 반려를 반복하지 않는다.</p>
+              <p class="bullet-line">
+                반려 사유를 먼저 읽고 내용을 수정한 뒤 다시 요청해야 같은 반려를
+                반복하지 않는다.
+              </p>
+            </article>
+            <article class="manual-article compact">
+              <h3>7.5 로그인은 되는데 연결이 안 되는 경우</h3>
+              <p class="bullet-line">
+                현재 설치한 클라이언트가 현재 사용 중인 운영 환경용 설치
+                파일인지 확인한다.
+              </p>
+              <p class="bullet-line">
+                네트워크 연결 상태를 확인하고 앱을 완전히 종료한 뒤 다시
+                실행한다.
+              </p>
+            </article>
+            <article class="manual-article compact">
+              <h3>7.6 Android에서 백그라운드 연결이 약한 경우</h3>
+              <p class="bullet-line">
+                배터리 최적화 예외를 허용했는지 먼저 확인한다.
+              </p>
+              <p class="bullet-line">
+                화면이 꺼진 뒤 앱이 강제로 정지되지 않는지도 함께 점검한다.
+              </p>
             </article>
           </section>
           <section class="manual-section" id="8-빠른-진입-경로">
@@ -1156,11 +2314,8 @@
         </div>
       </main>
     </div>
-    <script type="module" src="../assets/js/navigation.js">
-    </script>
-    <script type="module" src="../assets/js/toc.js">
-    </script>
-    <script type="module" src="../assets/js/image-viewer.js">
-    </script>
+    <script type="module" src="../assets/js/navigation.js"></script>
+    <script type="module" src="../assets/js/toc.js"></script>
+    <script type="module" src="../assets/js/image-viewer.js"></script>
   </body>
 </html>
