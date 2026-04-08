@@ -23,6 +23,7 @@
 }
 
 .manual-article {
+  margin-top: 40px;
   margin-bottom: 28px;
 }
 
@@ -42,6 +43,9 @@
 .manual-article .manual-article h3 {
   font-size: 18px;
   font-weight: 750;
+}
+
+.manual-article * {
 }
 
 #5-1-idnclient-설치-및-사용 > h3,
@@ -87,6 +91,7 @@
   position: relative;
   padding-left: 18px;
   color: #1f2937;
+  margin-left: 20px;
 }
 
 .bullet-line::before {
@@ -101,6 +106,7 @@
   position: relative;
   padding-left: 34px;
   color: #334155;
+  margin-left: 22px;
 }
 
 .bullet-subline::before {
@@ -113,6 +119,7 @@
 
 .step-line {
   color: #1f2937;
+  margin-left: 15px;
 }
 
 .code-line {
@@ -125,6 +132,7 @@
   line-height: 1.6;
   white-space: break-spaces;
   word-break: break-word;
+  margin: 0px 20px 15px 13px;
  }
 
 .manual-document code {
